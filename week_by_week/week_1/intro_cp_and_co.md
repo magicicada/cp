@@ -85,7 +85,7 @@ Often we'd denote these $(X, D, C)$ where $X$ is a set of variables, $D$ is a se
 (planned live example)
 
 ### More formally, what are constraints?
-One way to formally view a **constraint** is as a pair $C = (S, R)$ where $S = (x_i_1, ... x_i_k)$ are the variables the constraint is about (the scope), and $R$ are the tuples that satisfy the constraint - note that therefore 
+One way to formally view a **constraint** is as a pair $C = (S, R)$ where $S = (x_{i_1}, ... x_{i_k})$ are the variables the constraint is about (the scope), and $R$ are the tuples that satisfy the constraint - note that therefore 
 $R \subseteq d_{i_1} \times ... \times d_{i_k}$ where $d_{i_j}$ is the domain of $x_{i_j}$.  
 
 But for many kinds of constraints this would be an unacceptably cumbersome set, and so we often specify constraints in more compact ways, e.g. those above for colouring, SAT. 
