@@ -3,14 +3,14 @@ Note: draft only, not authoritative yet.
 CP 2022 is a coursework-only course; that is, we have no exam.  
 
 We are planning four categories of assessment:
-- Assignment 1: MiniZinc modelling assignment 
-    - 15% of grade, due Tuesday 11 October
-- Multiple choice Moodle quizzes 
+- Assignment 1: MiniZinc modelling assignment - automated marking 
+    - 10% of grade, due Tuesday 11 October
+- Multiple choice Moodle quizzes - automated marking
     - Total 20%, spread throughout semester 
 - Assignment 2: A choice of two options:
     - Comparing different solving approaches on the same problem (coding, testing, plotting)
     - 5-minute video explaining one of a list of topics with a demo/example
-    - in both cases 15% of grade, due Tuesday 8th November
+    - in both cases 20% of grade, due Tuesday 8th November
 - A research poster with presentation (50%)
     - 50% of grade, due on poster day in last week of semester
 
