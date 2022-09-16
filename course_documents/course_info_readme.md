@@ -20,7 +20,7 @@ This course is coursework-only - please let me know how this goes for you!
 
 We are planning:
 - Assignment 1: MiniZinc modelling assignment 
-    - 15% of grade, due Tuesday 11 October
+    - 10% of grade, due Tuesday 11 October
 - Multiple choice Moodle quizzes 
     - Total 20%, spread throughout semester 
 - Assignment 2: A choice of two options:
