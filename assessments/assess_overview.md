@@ -12,7 +12,7 @@ We are planning four categories of assessment:
     - 7-minute video explaining one of a list of topics with a demo/example
     - in both cases 20% of grade, due Tuesday 8th November
 - A research poster with presentation (50%)
-    - 50% of grade, due on poster day in last week of semester
+    - 50% of grade, due near end o semester, with poster day presentations in last week 
 
 
 I (Jess) will give you as much notice as I can of details, including marking schemes where possible.  Some of our assessments will be automatically-marked.  
