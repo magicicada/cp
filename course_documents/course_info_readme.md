@@ -25,7 +25,7 @@ We are planning:
     - Total 20%, spread throughout semester 
 - Assignment 2: A choice of two options:
     - Comparing different solving approaches on the same problem (coding, testing, plotting)
-    - 5-minute video explaining one of a list of topics with a demo/example
+    - 7-minute video explaining one of a list of topics with a demo/example
     - in both cases 20% of grade, due Tuesday 8th November
 - A research poster with presentation (50%)
     - 50% of grade, due near end of semester
