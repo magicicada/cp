@@ -28,7 +28,7 @@ We are planning:
     - 5-minute video explaining one of a list of topics with a demo/example
     - in both cases 20% of grade, due Tuesday 8th November
 - A research poster with presentation (50%)
-    - 50% of grade, due on poster day in last week of semester
+    - 50% of grade, due near end of semester
 
 ### Weekly Sessions
 
