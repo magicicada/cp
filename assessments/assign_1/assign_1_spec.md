@@ -67,3 +67,5 @@ It **must** be possible to run your code with the command-line call:
 
 And similarly for other .dzn files.
 Stub code and the `four_intervals.dzn` file are available.
+
+*Clarification: In the second task, when I require two guests to meet, their visits must overlap for a full day.  That is, it is not sufficient for one to leave and another to arrive on the same day.* 
