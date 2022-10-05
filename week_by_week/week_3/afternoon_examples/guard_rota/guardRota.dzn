@@ -4,3 +4,4 @@ lwbDay = 2; % min #guards on day shift
 upbDay = 4; % max #guards on day shift
 lwbNight = 2; % min #guards on night shift
 upbNight = 3; % max #guards on night shift
+budget = 32;
