@@ -1,0 +1,5 @@
+# usage: minizinc time_intervals.mzn <instance.dzn> | python mark_castle_visits.py <instance.dzn> <time to achieve>
+# where the <time to achive> is a minimum time from a sample solution implementation
+# example run below.
+# This is example marking code for a typical instance - for some (eg edge or unsatisfiable) instances I test with, not all marks will be available.
+minizinc time_intervals.mzn four_intervals.dzn | python mark_castle_visits.py four_intervals.dzn 6
