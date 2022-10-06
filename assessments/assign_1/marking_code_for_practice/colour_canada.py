@@ -30,7 +30,7 @@ def read_out():
    for line in input_stream:
       if not line.startswith("-"):
         split = line.strip().split()
-        read_sol[split[0]] = int(split[2])
+        read_sol[split[0]] = int(split[2].split(";")[0])
    return read_sol
 
 def mark_mzn_output(verbose = False):
