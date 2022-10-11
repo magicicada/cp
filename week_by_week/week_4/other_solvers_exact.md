@@ -169,6 +169,6 @@ Next (if we assume they're getting the same solutions, so we're just comparing t
 
 Here's an example of a timing figure that I think is a good template:
 
-<to add>
+![image](https://user-images.githubusercontent.com/6224231/195068938-a23361af-57cb-4132-8968-279141ee167f.png)
 
 
