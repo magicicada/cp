@@ -1,0 +1,17 @@
+for d in */ ; do
+    echo "$d"
+    gtimeout 20s minizinc "$d"/colour_can.mzn | python colour_canada.py > "$d"/colour_mark
+    gtimeout 20s minizinc "$d"/time_intervals.mzn good_intervals.dzn | python mark_castle_visits.py good_intervals.dzn 9 > "$d/good_intervals_mark"
+    gtimeout 20s minizinc "$d"/time_intervals.mzn good_intervals_clique.dzn | python mark_castle_visits.py good_intervals_clique.dzn 9 > "$d/good_intervals_clique_mark"
+    gtimeout 20s minizinc "$d"/time_intervals.mzn unsat_must_and_not.dzn | python should_be_unsat.py > "$d/unsat_must_and_not_mark"
+    gtimeout 20s minizinc "$d"/time_intervals.mzn unsat_cycle.dzn | python should_be_unsat.py > "$d/unsat_cycle_mark"
+    
+    can_mark=`cat "$d"/colour_mark`
+    good_int_mark=`cat "$d"/good_intervals_mark`
+    good_clique=`cat "$d"/good_intervals_clique_mark`
+    unsat_conf=`cat "$d"/unsat_must_and_not_mark`
+    unsat_cycle=`cat "$d"/unsat_cycle_mark`
+    
+    echo "$d,$can_mark,$good_int_mark,$good_clique,$unsat_conf,$unsat_cycle" >> marks_colated.csv
+    
+done
