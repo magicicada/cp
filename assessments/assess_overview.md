@@ -10,9 +10,9 @@ We are planning four categories of assessment:
 - Assignment 2: A choice of two options:
     - Comparing different solving approaches on the same problem (coding, testing, plotting)
     - 7-minute video explaining one of a list of topics with a demo/example
-    - in both cases 35% of grade, due Tuesday 14th November
+    - in both cases 35% of grade, due at the end of semester
 - A research poster with presentation (40%)
-    - 40% of grade, due near end of semester, presentations at poster day likely optional - TBD
+    - 40% of grade, due Monday 13th November - poster presentations to follow
 
 
 I (Jess) will give you as much notice as I can of details, including marking schemes where possible.  Some of our assessments will be automatically-marked.  
