@@ -54,7 +54,7 @@ There are many types of general solver for these types of problems, and often th
 - Not-guaranteed-to-be-optimal heuristic solvers
 
 ### Example solver approach: (Exhaustive) Combinatorial search
-To get started with search-based spproaches, let's talk about a naive approach to combinatorial search
+To get started with search-based approaches, let's talk about a naive approach to combinatorial search
 - we'll do it via an example of max clique
 - we'll draw a search tree
 - (planned live example)
@@ -62,7 +62,7 @@ To get started with search-based spproaches, let's talk about a naive approach t
 ## But isn't this course about constraint programming?
 Ok, fine.  Enough solving for now, let's talk CP.  
 
-A \emph{constraint program} is a framework for solving \emph{constraing satisfaction problems} (CSP).  
+A \emph{constraint program} is a framework for solving \emph{constraint satisfaction problems} (CSP).  
 
 A CSP is a triple consisting of:
 - variables
@@ -101,7 +101,7 @@ We are sometimes interested in different notions of *solution*.  We'll touch on 
  
 We'll start working through a MiniZinc tutorial and then work on some examples:
 http://www.dcs.gla.ac.uk/~pat/cpM/minizincCPM/tutorial/minizinc-tute.pdf
-or here: https://www.minizinc.org/doc-2.5.5/en/modelling.html
+or here: https://www.minizinc.org/
 I sometimes like to run MiniZinc from Python: https://minizinc-python.readthedocs.io/en/latest/getting_started.html
 
 
