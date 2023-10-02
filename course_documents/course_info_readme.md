@@ -1,5 +1,5 @@
 ---
-tags: cp_2022, cp, teaching
+tags: cp_2023, cp, teaching
 ---
 # Welcome and Intro to Constraint Programming
 
@@ -18,21 +18,22 @@ There is some possible wiggle here, but the current plan is:
 ### Assessment
 This course is coursework-only - please let me know how this goes for you!
 
-We are planning:
-- Assignment 1: MiniZinc modelling assignment 
-    - 10% of grade, due Tuesday 11 October
-- Multiple choice Moodle quizzes 
-    - Total 20%, spread throughout semester 
-- Assignment 2: A choice of two options:
+We are planning four categories of assessment:
+- Assignment 1: MiniZinc modelling assignment - automated marking 
+    - 15% of grade, due Tuesday 10 October
+- Multiple choice Moodle quizzes - automated marking
+    - Total 10%, spread throughout semester 
+- Assignment 2: A research poster with presentation (40%)
+    - 40% of grade, due Monday 13th November - poster presentations to follow
+- Assignment 3: A choice of two options:
     - Comparing different solving approaches on the same problem (coding, testing, plotting)
     - 7-minute video explaining one of a list of topics with a demo/example
-    - in both cases 20% of grade, due Tuesday 8th November
-- A research poster with presentation (50%)
-    - 50% of grade, due near end of semester
+    - in both cases 35% of grade, due at the end of semester
+
 
 ### Weekly Sessions
 
-Teaching is on Wednesdays from 9-11 and 13-14 in Adam Smith 915.  I'm planning to use the morning session for material, and the afternoon for Q&A, working on problems, etc.  
+Teaching is on Wednesdays from 9-11 and 13-14 in Turnbull 301.  I'm planning to use the morning session for material, and the afternoon for Q&A, working on problems, etc.  
 
 If the room has the infrastructure I'll record, but I cannot promise this will always work.  
 

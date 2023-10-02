@@ -1,5 +1,3 @@
-Note: draft only, not authoritative yet.
-
 CP 2023 is a coursework-only course; that is, we have no exam.  
 
 We are planning four categories of assessment:

@@ -1,8 +1,8 @@
 ---
-tags: cp, teaching, 2022
+tags: cp, teaching, 2023
 ---
 
-# Assignment 1:  Due October 11th
+# Assignment 1:  Due October 10th
 
 Note that this assignment will be automatically marked. Code that does not run will get zero marks.  
 
