@@ -1,20 +1,11 @@
 ---
-tags: cp, cp_2022, teaching
+tags: cp, cp_2023, teaching
 ---
 
 # Week 2 - More encoding and MiniZinc
 
-First: :clipboard: admin announcements!:clipboard:
-- first assignment ready soon - marking code won't be ready right away, but figured better to give you the spec anyway.
-- Good news (?) Everyone - we can finish this course a week early!
-![](https://i.imgur.com/BuiOJDc.png)
-
-
-----
-## Now content:
 
 We left off last week looking at a few MiniZinc models for graph colouring.  This week the plan is to:
-- look at including a data file specifying a graph for those examples
 - Think about and practice a few other types of problems to model (we may not get through all these):
     - coin changer 
         - (some content from https://blog.jpalardy.com/posts/problem-solving-with-minizinc/)
