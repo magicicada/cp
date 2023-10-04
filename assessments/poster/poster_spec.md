@@ -1,7 +1,9 @@
 # CP Final Assessment: Research Poster
 
-- Submission due: 
-- Live presentations on poster day: 
+- Submission due: Monday 13th November 
+- Live presentations on poster day: TBD
+
+*You may complete the poster portion of this assessment individually or in pairs.  The description that follows is for the individual option - the paired option differences are in a section at the end.*
 
 For this assessment, you will make an A2 research poster about a published paper within the area of constraint programming.  You may choose a paper of interest to you - if you are concerned that it is not sufficiently CP-focussed, or is unsuitable for some other reason you should check the paper with CP's lecturer (Jess Enright in 2023).  In case you are unable to find a paper, there is a list to get you started at the end of this document.  A marking scheme will also be made available.  
 
@@ -10,11 +12,11 @@ For this assessment, you will make an A2 research poster about a published paper
 Your poster should be A2 in size, and should include a title, an introduction to the topic of the paper, a section describing the results, a section describing how you think the paper fits into the wider field of CP or other computing topics (you might want to comment on the importance of an application, or the importance of a technique), a section describing the limitations of the paper or any criticism you have of it, and a short conclusion.  
 
 ### How to submit your poster
-Please submit your poster on Moodle as a PDF file.  Ensure it is A2 size, or else it will not print properly.
+Please submit your poster on Moodle as a PDF file.  Ensure it is A2 size.  You should print your poster for poster-day - you can either print it as a research poster in one piece, or you can print A4 sheets and tape them together - either is fine.  If you want a one-piece research poster and cost is a barrier, contact the lecturer - she can print a small number of these posters.  
 
 
 ### Poster day
-CP's lecturer will endeavour to get the posters printed and arrange a space to put them on poster day during CP's timetabled sessions.  Given the size of the class, we will likely rotate posters over the day.  When your poster is up, the intention is that the lecturer will come around and ask a question about your poster - this will be part of your mark.  
+We will display printed posters on a Wednesday and hold a live poster day.   Given the size of the class, we will likely rotate posters over the day.  When your poster is up,  the lecturer will come around and ask a question about your poster - this will be part of your mark.  
 
 
 ### Papers to get you started:
