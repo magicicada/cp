@@ -54,3 +54,5 @@ Machine learning:
 
 There are many more out there - following citations from these will help you find them.  
 
+### Pair poster option  
+You may optionally work in a pair to complete the poster portion of this assessment.  The live question/presentation mark will still be conducted individually.  If you work in a pair, you and your partner must each chose a paper and these two papers should be closely related.  They might be competing techniques, or one an improvement of another, or different approaches to the same problem, etc.  You will then produce one **A1** size poster, with clear sections introducing the topic, describing the main contribution of each of the two papers, and an extra section highlighting how the two papers are related.
