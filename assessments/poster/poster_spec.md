@@ -1,9 +1,9 @@
 # CP Final Assessment: Research Poster
 
-- Submission due: 16 November 2022
-- Live presentations on poster day: 23 November 2022
+- Submission due: 
+- Live presentations on poster day: 
 
-For this assessment, you will make an A2 research poster about a published paper within the area of constraint programming.  You may choose a paper of interest to you - if you are concerned that it is not sufficiently CP-focussed, or is unsuitable for some other reason you should check the paper with CP's lecturer (Jess Enright in 2022).  In case you are unable to find a paper, there is a list to get you started at the end of this document.  A marking scheme will also be made available.  
+For this assessment, you will make an A2 research poster about a published paper within the area of constraint programming.  You may choose a paper of interest to you - if you are concerned that it is not sufficiently CP-focussed, or is unsuitable for some other reason you should check the paper with CP's lecturer (Jess Enright in 2023).  In case you are unable to find a paper, there is a list to get you started at the end of this document.  A marking scheme will also be made available.  
 
 ### What should be on your poster
 
