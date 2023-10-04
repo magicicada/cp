@@ -1,11 +1,6 @@
 ---
 tags: cp, cp_2023, teaching
 ---
-Week 6: 
-:clipboard:Admin:clipboard:
-- no quiz this week
-- afternoon session: Q&A/'Office hours'
-
 
 # Global constraints
 We've seen at least one of these in action: all-different - now we will talk about them in a bit more.  Ciaran may follow up to talk even more about the nitty-gritty internals.  
