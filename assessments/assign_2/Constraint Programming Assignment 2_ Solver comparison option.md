@@ -1,10 +1,10 @@
 ---
-tags: cp, cp_2022, teaching, assessment
+tags: cp, cp_2023, teaching, assessment
 ---
 
 # Constraint Programming Assignment 2: Solver comparison option
 
-This assignment is worth 20% of your final grade, and is marked out of 40 marks.  It must be submitted on Moodle by 4:30 pm on Tuesday 8th November.  
+This assignment is worth 35 percent of your final grade, and is marked by band using the standard university marking scheme.  It must be submitted on Moodle by 4:30 pm on Friday 1 December.  
 
 If you choose the solver comparison option you must implement models for the firefighter problem in both a MiniZinc CSP style and an integer program style, as well as set up an experimental pipeline to compare them, including generating inputs, and plotting timing outputs.  You will submit a maximum 2-page report describing your efforts. Fuller details below.  
 
@@ -52,33 +52,27 @@ If there is doubt about a submission being very similar to another, I may ask yo
 
 
 ## Marking Scheme
-Recall that this assignment is marked out of **40 total marks**
-- MiniZinc CSP model: **10 marks**
+Recall that this assignment is marked using a band-based scheme.  Below are weightings for different aspects of the work.  You will not be given numerical grades.  
+- MiniZinc CSP model: **25 percent**
     - Does the model appear to be correct?
     - Is the model reasonably described in the report, with interpretation of decision variables and any other choices made clear?
     - Is there mention of the solver used?
-- Integer linear program model: **10 marks**
+- Integer linear program model: **25 percent**
     - Does the model appear to be correct?
     - Is the model reasonably described in the report, with interpretation of variables, constraints and any other choices made clear?
     - Is the choice of solver mentioned and justified (by e.g. efficiency, curiosity, convenience)?
-- Instance generation: **5 marks**
+- Instance generation: **15 percent*
     - Is it clear how instances were generated?
     - Are choices about what instances to generate and how sound and well-described?
     - Are the instances varied appropriately or otherwise well-chosen?
     - If benchmark instances are used is this mentioned and source given?
-- Experimental pipeline: **5 marks**
+- Experimental pipeline: **15 percent**
     - Is the pipeline described in reasonable detail for reproducability?
     - Does the pipeline sensibly take instances, run the models, and record timing results?
     - Are any choices of how to design the pipeline described?  Scripts, bash, within-language calls, etc?
     - Is a timeout set, and are timeouts recorded?
-- Results: **10 marks**
+- Results: **20 percent**
     - Is the figure or table appropriate, readable, informative?
     - Is it clear how the solvers compare in performance?
     - Does the student deal with timeouts appropriately, and is it clear how this is done?
     - Does the text clearly interpret the results, talking about what we can understand from the results about the solvers, perhaps in different types of instances?
-
-### Bonus 2 marks - Clever CSP modelling
-The emphasis on marking for the CSP model for the main part of this assignment is on producing a reasonably-efficient correct model - I am not expecting clever insights into the CSP encoding that speed things up.  
-
-However, up to 2 bonus marks are available if you want to try some clever or unusual encoding that might speed up computation of the MiniZinc model, and then in just a few sentences describe why you tried what you did at the end of the report.  
-- You can get up to 2 extra bonus marks for this extra bit, though your total mark is capped at 40 marks.  For example: even if with bonus marks your mark was 42 marks, you would only get a final grade of 40 marks.

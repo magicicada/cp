@@ -1,12 +1,12 @@
 ---
-tags: cp, cp_2022, teaching, assessment
+tags: cp, cp_2023, teaching, assessment
 ---
 
 # Constraint Programming Assignment 2: Explainer video option
 
-This assignment is worth 20% of your final grade, and is marked out of 40 marks.  It must be submitted on Moodle by 4:30 pm on Tuesday 8th November.  
+This assignment is worth 35 percent of your final grade, and is marked by band using the standard university marking scheme.  It must be submitted on Moodle by 4:30 pm on Friday 1 December.  
 
-If you choose the explainer option you must produce a **maximum 7-minute** video explaining one of the concepts on the list below.  
+If you choose the explainer option you must produce a **maximum 10-minute** video explaining one of the concepts on the list below.  
 
 You video should include a worked example of the concept you are describing, and mention how it links to what we have mentioned in class.  
 
@@ -35,32 +35,29 @@ You may choose any of the below topics for your 7-minute video.  I have divided 
 - Conflict-driven clause learning (as related to SAT solvers)
 - Duality based techniques for MIP solvers
 - The PPSZ algorithm https://dl.acm.org/doi/10.1145/1066100.1066101
+- Zobrist hashing as part of minimax
+- Monte Carlo tree search as used as part of alpha-beta game search
 
 ## Marking Scheme
-Recall that this assignment is marked out of **40 total marks**
+Recall that this assignment is marked using a band-based scheme.  Below are weightings for different aspects of the work.  You will not be given numerical grades.  
 
-- General clarity of presentation: **10 marks**
+- General clarity of presentation: **25 percent **
     - Is the explainer well-organised with logical flow?
     - Is there appropriate use of images, graphics, diagrams
     - Is it possible to understand the verbal explanation (appropriate volume, good planning of what is said)?
     - Is the pace of the presentation good (students often rush at the end - try to avoid this!)?
-- Describing the concept: **10 marks**
+- Describing the concept: **25 percent**
     - Is the definition or description of the concept/approach clear? Is intuition given?
     - Are all acronyms or technical terms described?
     - is it clear what motivates the approach, why it is needed or when?
     - Is it clear that the student understands the approach/concept/algorithm?
-- Worked example: **15 marks**
+- Worked example: **35 percent**
     - Is there a clear example of the concept/algorithm/approach?
     - Does the example show input, steps of concept/approach/algorithm and result?
     - Does the example show the important characteristics of the concept/approach/algorithm?
     - Is there suitable use of text/slides/diagram/video to demonstrate the example?
-- Linkage to course material (and/or other CP concepts): **5 marks**
-    - Is there mention of any topics we discussed within the course (up to and including Wednesday 19th November) that are related to the topic of the video?
+- Linkage to course material (and/or other CP concepts): **15 percent**
+    - Is there mention of any topics we discussed within the course that are related to the topic of the video?
     - Is it clear what the relationship is?  For example, a student might point out where their topic improves on something we discussed, or if they are useful in different circumstances?
 
-
-
-### Bonus 2 marks - CP topic meme
-- Up to 2 bonus marks are available for including a meme about your topic with the video.  You may either submit it separately or within your video (if it's within the video maybe label, I'm not very cool so I might miss it).  Picture, video, gif, I don't mind.
-- You can get up to 2 extra bonus marks for this extra bit, though your total mark is capped at 40 marks.  For example: even if with bonus marks your mark was 42 marks, you would only get a final grade of 40 marks.
 
