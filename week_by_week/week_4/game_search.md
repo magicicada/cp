@@ -33,14 +33,15 @@ minimax( origin, depth, TRUE )
     
 Let's construct this tree with values for our tic-tac-toe example.  
     
-What does this tell us about games?  How canwe interpret the value at the root?
+What does this tell us about games?  How can we interpret the value at the root?
     
 ## How can we make this faster?
 Without improvements, minimax will construct the entire game tree.
     
 We can deploy many tricks!
-- alpha-beta pruning
-- hash tables for repeat states
+- negamax (not a sci-fi robot: https://en.wikipedia.org/wiki/Negamax)
+- alpha-beta pruning (https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning)
+- hash tables for repeat states (https://en.wikipedia.org/wiki/Transposition_table)
 - node ordering (maybe find a win faster)
 - trickery to make at-node computation faster
 - if we're not likely to solve exactly can use node value heuristics
@@ -50,3 +51,6 @@ Two now-old things that were exciting at the time:
 - Monte Carlo Tree Search
     
     ![](https://i.imgur.com/Ox1IcMq.png)
+    
+   
+## Shall we implement?
