@@ -1,19 +1,13 @@
 ---
-tags: cp, teaching, cp_2022
+tags: cp, teaching, cp_2023
 ---
-# Week 4 (+?) - 20221012
-:clipboard:Admin:clipboard:
-- Hopefully all has gone well with assignment 1
-- Final poster assessment is now official!
-- Assignment 2 spec available soon - will take longer!
-- Don't forget quizzes - close at 16:30 Friday, but open all week
 
 
 # Other (more specific) kinds of solvers and encodings
 Why talk about these?  
 - To give you an idea of what's out there, and different kinds of encodings.  
 - To give you something to compare to
-    - e.g. in Assignment 2
+    - e.g. in last assignment
 
 We will talk about:
 - **Integer programs** <<
@@ -25,7 +19,7 @@ And how we might compare the performance of different solvers or techniques.
 # Integer programming
 We have in a sense already done some integer programming, just encoded as CSPs in MiniZinc style.
 
-An integer program is a mathematical optimization in which the variables are integers (if you've seen linear programming before, it's a linear program where we retrict variables to integer values)
+An integer program is a mathematical optimization in which the variables are integers (if you've seen linear programming before, it's a linear program where we restrict variables to integer values)
 - often people actually mean integer *linear* programming where the constraints are linear
 - if some of the variables are not integers, we have *mixed-integer* programming (MIP)
 - if the integer domains are restricted to subsets of $\{0, 1\}$ then zero-one or binary integer programming
@@ -61,9 +55,9 @@ Subject to constraints:
 - Every node gets exactly one colour:
     - $\forall i \in V$ $\sum_{j}c_{i,j} = 1$
 - Every edge has different coloured ends
-    - $\forall (u, v) \in E, j \in C$   $x_{u,j} + x_{v,j} \leq 1$
+    - $\forall (u, v) \in E, j \in C$,    $c_{u,j} + c_{v,j} \leq 1$
 - We record when we use a colour
-    - $\forall i \in V, j \in C$ $x_{i, j} \leq w_j$
+    - $\forall i \in V, j \in C$ $c_{i, j} \leq w_j$
 
 
 ### A PuLP in Python example
@@ -76,7 +70,7 @@ Questions:
 - Optimisation version: What is the maximum number of vertices we can save?
 
 A few resources:
-- a classic survey
+- a classic survey https://ajc.maths.uq.edu.au/pdf/43/ajc_v43_p057.pdf
 - a paper about ILP and heuristic techniques on this problem: https://dl.acm.org/doi/10.1016/j.cor.2015.02.004
 
 We can encode this as an ILP
@@ -91,7 +85,7 @@ Some notation:
 
 Some variables and how we interpret them:
 - $b_{x,t}$ gets $1$ if vertex $x$ is burned at or before $t$, 0 otherwise
-- $d_{x,t}$ gets $1$ if vertex $x$ is burned at or before $t$, 0 otherwise
+- $d_{x,t}$ gets $1$ if vertex $x$ is defended at or before $t$, 0 otherwise
 
 
 ![](https://i.imgur.com/hqqVgbt.png)
@@ -169,6 +163,7 @@ Next (if we assume they're getting the same solutions, so we're just comparing t
 
 Here's an example of a timing figure that I think is a good template:
 
-![image](https://user-images.githubusercontent.com/6224231/195068938-a23361af-57cb-4132-8968-279141ee167f.png)
+
+![](https://i.imgur.com/jQ2d88M.png)
 
 
