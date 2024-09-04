@@ -1,6 +1,3 @@
----
-tags: cp_2022, cp, teaching
----
 # Welcome and Intro to Constraint Programming
 
 ## The Plan
@@ -9,14 +6,14 @@ There is some possible wiggle here, but the current plan is:
 - Combinatorial optimisation and decision problems
 - Intro to CP and CSP
 - Modelling problems as CP in MiniZinc
-- Special types of constraints
+- Global and special constraints
 - Arc consistency and search approaches for CP
 - Other solvers for combinatorial problems
-- Heuristics
+- Combinatorial search for games
 - Cool CP stuff from Ciaran
 
 ### Assessment
-This course is coursework-only - please let me know how this goes for you!
+This course is coursework-only.  There is thus a lot of coursework, so you will need to manage things fairly carefully. 
 
 We are planning:
 - Assignment 1: MiniZinc modelling assignment 
