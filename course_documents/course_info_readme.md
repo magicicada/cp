@@ -16,20 +16,23 @@ There is some possible wiggle here, but the current plan is:
 This course is coursework-only.  There is thus a lot of coursework, so you will need to manage things fairly carefully. 
 
 We are planning:
-- Assignment 1: MiniZinc modelling assignment 
-    - 10% of grade, due Tuesday 11 October
-- Multiple choice Moodle quizzes 
-    - Total 20%, spread throughout semester 
-- Assignment 2: A choice of two options:
-    - Comparing different solving approaches on the same problem (coding, testing, plotting)
-    - 7-minute video explaining one of a list of topics with a demo/example
-    - in both cases 20% of grade, due Tuesday 8th November
+
+- Assignment 1: MiniZinc modelling assignment
+    - Relatively simple problem, focus on a correct model
+    - 15% of grade, due Tuesday 15 October
+- Multiple choice Moodle quizzes
+    - Total 15%, spread throughout semester
+- Assignment 2: MiniZinc modelling assignment
+    - A more complex problem, correctness and efficiency needed
+    - 20% of grade, due Tuesday 12 November
 - A research poster with presentation (50%)
-    - 50% of grade, due near end of semester
+    - 50% of grade, due Tuesday 26 November
+
+All assessments are due by 4:30 pm on the day they are due.  Some will be automatically marked, some band-marked.  
 
 ### Weekly Sessions
 
-Teaching is on Wednesdays from 9-11 and 13-14 in Adam Smith 915.  I'm planning to use the morning session for material, and the afternoon for Q&A, working on problems, etc.  
+Teaching is on Wednesdays from 9-11 and 13-14 in Boyd Orr.  I'm planning to use the morning session for material, and the afternoon for Q&A, working on problems, etc.  
 
 If the room has the infrastructure I'll record, but I cannot promise this will always work.  
 
@@ -39,7 +42,7 @@ If the room has the infrastructure I'll record, but I cannot promise this will a
 - be a reasonable human being
 - be as transparent and clear as possible with material and assessment methods
 - be as prepared as I can
-    - but please be generous - this is a course reboot
+    - but please be generous - I try to run the course reasonably interactively
 - respond to contact within two weekdays unless I am away/sick/etc
     - sometimes this might be to ask you to save the question for a Wednesday session
 - give feedback within the School's standard timeframe
