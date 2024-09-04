@@ -17,7 +17,7 @@ This assessment is band marked, which means you won't get a numerical mark, but 
 	- Is it clear that the student has reflected critically on the contribution of the paper?
     - Concluding thoughts
     	- Has the student summarised the most important aspects of the paper?
-	- Is it clear that the student understands why these are important, and has made suitable choices on what to emphasise?
+      	- Is it clear that the student understands why these are important, and has made suitable choices on what to emphasise?
 - Presentation (weighted 20%):
 - when grading take into account:
     - Layout
