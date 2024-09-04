@@ -1,7 +1,3 @@
----
-tags: cp_2022, cp, teaching
----
-
 # Intro to CP and Combinatorial Optimisation
 ## Aims:
 - introduce/remind what a combinatorial optimisation problem is

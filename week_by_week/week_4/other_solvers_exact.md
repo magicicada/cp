@@ -1,19 +1,8 @@
----
-tags: cp, teaching, cp_2022
----
-# Week 4 (+?) - 20221012
-:clipboard:Admin:clipboard:
-- Hopefully all has gone well with assignment 1
-- Final poster assessment is now official!
-- Assignment 2 spec available soon - will take longer!
-- Don't forget quizzes - close at 16:30 Friday, but open all week
-
-
 # Other (more specific) kinds of solvers and encodings
 Why talk about these?  
 - To give you an idea of what's out there, and different kinds of encodings.  
 - To give you something to compare to
-    - e.g. in Assignment 2
+
 
 We will talk about:
 - **Integer programs** <<
@@ -124,7 +113,6 @@ Polytopes of all feasible integer points and of the LP relaxation to the integer
 
 This bound helps us in pruning during search.  
 
-(If you're interested, this is one of the things you could do an 'Explainer' video on)
 
 # SAT solvers
 SATisfiability solvers deal specifically in solving prop logical expressions of the sort we've seen in our examples of e.g. 3-CNF-SAT. 

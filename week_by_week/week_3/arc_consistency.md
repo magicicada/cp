@@ -1,18 +1,4 @@
-# Week 3 - 5 October 2022
-
-## :clipboard: Admin :clipboard:
-- Quiz 1 now available on Moodle - due Friday
-- Quiz 2 will be next week
-- Assignment 1 now up, due on the 11th - should not take you a full week!
-- This afternoon's session: bring any questions about the assignment, otherwise more MiniZinc examples
-- Working to get you the spec for poster ASAP
-- We have exceeded room capacity for our original room.  
-    - We are in Boyd Orr this morning
-    - Adam Smith 916 next Wednesday morning
-    - Rankine Building in afternoons
-    - May need to split you into quarters and request one-quarter view recording once we're back in small room.  
-    - **Keep an eye on your timetable, we may move rooms at short notice**
- 
+# Week 3 
 
 # Search and Arc Consistency
 
