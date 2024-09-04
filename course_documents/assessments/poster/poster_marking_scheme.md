@@ -13,8 +13,8 @@ This assessment is band marked, which means you won't get a numerical mark, but 
     - Results discussion
     	- Does the student clearly understand the results and their implications?
     - Discussion of limitations
-    	- Are the limitations of the paper, both in the work itself and in the context of the field clear? 
-	- Is it clear that the student has reflected critically on the contribution of the paper?
+    	- Are the limitations of the paper, both in the work itself and in the context of the field clear?
+      	- Is it clear that the student has reflected critically on the contribution of the paper?
     - Concluding thoughts
     	- Has the student summarised the most important aspects of the paper?
       	- Is it clear that the student understands why these are important, and has made suitable choices on what to emphasise?
