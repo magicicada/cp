@@ -1,17 +1,19 @@
 # Assignment 1:  Simple Modelling in MiniZinc
 
-Note that this assignment will be automatically marked. Code that does not run will get zero marks.  
+Note that this assignment will be automatically marked. Code that does not run will get zero marks. Sample marking code will be provided for you to check your code with. Be absolutely sure that your output format is as required.  
 
 ## Task 1 **[2 marks]**:
-You will write a MiniZinc model for a simple single instance of a graph colouring problem.  Consider the map of Canada with provinces and territories labeled: 
-![](https://i.imgur.com/P7iiRhr.png)
-(from: Lokal_Profil image cut to remove Canada and move Alaska closer by Paul Robinson, CC BY-SA 2.5 <https://creativecommons.org/licenses/by-sa/2.5>)
+You will write a MiniZinc model for a simple single instance of a graph colouring problem.  Consider the map of Nova Scotia at ![image](https://github.com/user-attachments/assets/af2035de-2fa6-4240-bca9-e7bdb532d8c4) (and ignore the colouring by government type, that is clearly not a proper colouring.)
 
-Write a model to assigns colours (which you should denote as positive integers in the set $\{1, 2, 3\}$) to provinces/territories so that:
-- two provinces/territories sharing a border have different colours
-- assume that NU borders all of NT, MB, ON, QC, NL
-- assume that PE borders all of QC,  NL,  NB, NS, and is coloured 3
-- YT is coloured 1
+(from: (https://en.wikipedia.org/wiki/List_of_counties_of_Nova_Scotia#/media/File:Nova_Scotia_counties_2015.png))
+
+Write a model to assign colours (which you should denote as positive integers in the set $\{1, 2, 3\}$) to counties so that:
+- counties sharing a border have different colours
+- corner adjacencies are not adjacencies (if in doubt, ask in an afternoon session)
+- Inverness borders Guysborough, Antigonish, Victoria, Richmond, but not Cape Breton
+- Richmond borders Cape Breton, Inverness, Guysborough, but not Victoria
+- Cumberland borders only Colchester
+- Antogonish is coloured 3
 - you use only three colours
 
 It **must** be possible to run your code with the command-line call:
@@ -21,9 +23,9 @@ It **must** be possible to run your code with the command-line call:
 Your output should be one province/territory per line with the colour assigned to it in the format:
 `<PROVINCE> = <COLOUR>;`
 e.g.: 
-`YT = 1;`
+`Antigonish = 3;`
 
-Indicating that YT is assigned colour 1
+Indicating that Antigonish is assigned colour 3
 
 
 ## Task 2 **[8 marks]**: 
