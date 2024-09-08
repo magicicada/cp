@@ -7,7 +7,7 @@ You will write a MiniZinc model for a simple single instance of a graph colourin
 
 (from: (https://en.wikipedia.org/wiki/List_of_counties_of_Nova_Scotia#/media/File:Nova_Scotia_counties_2015.png))
 
-Write a model to assign colours (which you should denote as positive integers in the set $\{1, 2, 3\}$) to counties so that:
+Write a model to assign colours (which you should denote as positive integers in the set $\{1, 2, 3, 4\}$) to counties so that:
 - counties sharing a border have different colours
 - corner adjacencies are not adjacencies (if in doubt, ask in an afternoon session)
 - A few clarifications:
@@ -17,14 +17,14 @@ Write a model to assign colours (which you should denote as positive integers in
   - Yarmouth borders Digby and Shelburne but not Queens
   - Shelburne does not border Dignby
 - Antigonish is coloured 3
-- you use only three colours
+- you use only four colours
 
 It **must** be possible to run your code with the command-line call:
 
 `minizinc colour_ns.mzn`
 
 Your output should be one province/territory per line with the colour assigned to it in the format:
-`<PROVINCE> = <COLOUR>;`
+`<COUNTY> = <COLOUR>;`
 e.g.: 
 `Antigonish = 3;`
 
