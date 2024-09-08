@@ -10,15 +10,18 @@ You will write a MiniZinc model for a simple single instance of a graph colourin
 Write a model to assign colours (which you should denote as positive integers in the set $\{1, 2, 3\}$) to counties so that:
 - counties sharing a border have different colours
 - corner adjacencies are not adjacencies (if in doubt, ask in an afternoon session)
-- Inverness borders Guysborough, Antigonish, Victoria, Richmond, but not Cape Breton
-- Richmond borders Cape Breton, Inverness, Guysborough, but not Victoria
-- Cumberland borders only Colchester
-- Antogonish is coloured 3
+- A few clarifications:
+  - Inverness borders Guysborough, Antigonish, Victoria, Richmond, but not Cape Breton
+  - Richmond borders Cape Breton, Inverness, Guysborough, but not Victoria
+  - Cumberland borders only Colchester
+  - Yarmouth borders Digby and Shelburne but not Queens
+  - Shelburne does not border Dignby
+- Antigonish is coloured 3
 - you use only three colours
 
 It **must** be possible to run your code with the command-line call:
 
-`minizinc colour_can.mzn`
+`minizinc colour_ns.mzn`
 
 Your output should be one province/territory per line with the colour assigned to it in the format:
 `<PROVINCE> = <COLOUR>;`
