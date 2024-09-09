@@ -2,7 +2,7 @@
 
 Note that this assignment will be automatically marked. Code that does not run will get zero marks. Sample marking code will be provided for you to check your code with. Be absolutely sure that your output format is as required.  
 
-## Task 1 **[2 marks]**:
+## Task 1 **[weighted 20%]**:
 You will write a MiniZinc model for a simple single instance of a graph colouring problem.  Consider the map of Nova Scotia at ![image](https://github.com/user-attachments/assets/af2035de-2fa6-4240-bca9-e7bdb532d8c4) (and ignore the colouring by government type, that is clearly not a proper colouring.)
 
 (from: (https://en.wikipedia.org/wiki/List_of_counties_of_Nova_Scotia#/media/File:Nova_Scotia_counties_2015.png))
@@ -31,7 +31,7 @@ e.g.:
 Indicating that Antigonish is assigned colour 3
 
 
-## Task 2 **[8 marks]**: 
+## Task 2 **[weighted 80%]**: 
 You will write a MiniZinc model for scheduling of guests visiting at a castle.  
 
 (This assignment inspired by the Duke of Densmore by Claude Berge - a mathematical story that's quite hard to find in print.)
