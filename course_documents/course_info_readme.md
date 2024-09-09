@@ -26,7 +26,7 @@ We are planning:
     - A more complex problem, correctness and efficiency needed
     - 20% of grade, due Tuesday 12 November
 - A research poster with presentation (50%)
-    - 50% of grade, due Tuesday 26 November
+    - 50% of grade, due Tuesday 26 November, poster day(s) in following week
 
 All assessments are due by 4:30 pm on the day they are due.  Some will be automatically marked, some band-marked.  
 
