@@ -19,12 +19,12 @@ We are planning:
 
 - Assignment 1: MiniZinc modelling assignment
     - Relatively simple problem, focus on a correct model
-    - 15% of grade, due Tuesday 15 October
+    - 10% of grade, due Tuesday 15 October
 - Multiple choice Moodle quizzes
     - Total 15%, spread throughout semester
 - Assignment 2: MiniZinc modelling assignment
     - A more complex problem, correctness and efficiency needed
-    - 20% of grade, due Tuesday 12 November
+    - 25% of grade, due Tuesday 12 November
 - A research poster with presentation (50%)
     - 50% of grade, due Tuesday 26 November, poster day(s) in following week
 
