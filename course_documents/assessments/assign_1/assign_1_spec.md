@@ -11,7 +11,7 @@ Write a model to assign colours (which you should denote as positive integers in
 - counties sharing a border have different colours
 - corner adjacencies are not adjacencies (if in doubt, ask in an afternoon session)
 - A few clarifications:
-  - Inverness borders Guysborough, Antigonish, Victoria, Richmond, but not Cape Breton
+  - Inverness borders Guysborough, Antigonish, Victoria, Richmond, but not Cape-Breton
   - Richmond borders Cape Breton, Inverness, Guysborough, but not Victoria
   - Cumberland borders only Colchester
   - Yarmouth borders Digby and Shelburne but not Queens
@@ -29,6 +29,13 @@ e.g.:
 `Antigonish = 3;`
 
 Indicating that Antigonish is assigned colour 3
+
+You should typeset Cape Breton as 'Cape-Breton' in your solution (this is what the marking code uses)
+
+You can check your solution against the marking code by running:  
+
+`minizinc colour-ns.mzn | python mark_colour_ns.py` 
+(a report of 6 marks is full marks for those tests. I may add more tests, but the format will remain the same)
 
 
 ## Task 2 **[weighted 80%]**: 

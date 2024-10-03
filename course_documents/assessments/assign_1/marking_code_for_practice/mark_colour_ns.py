@@ -50,9 +50,9 @@ def mark_mzn_output(verbose = False):
    edge_list['Guysborough'] = ['Halifax', 'Pictou', 'Antigonish', 'Richmond']
    edge_list['Antigonish'] = ['Pictou', 'Guysborough', 'Inverness']
    edge_list['Inverness'] = ['Antigonish', 'Guysborough', 'Richmond', 'Victoria']
-   edge_list['Richmond'] = ['Guysborough', 'Inverness', 'Cape Breton']
-   edge_list['Victoria'] = ['Inverness', 'Cape Breton']
-   edge_list['Cape Breton'] = ['Victoria', 'Richmond']
+   edge_list['Richmond'] = ['Guysborough', 'Inverness', 'Cape_Breton']
+   edge_list['Victoria'] = ['Inverness', 'Cape_Breton']
+   edge_list['Cape_Breton'] = ['Victoria', 'Richmond']
    
    student_sol = read_out()
    
@@ -65,7 +65,7 @@ def mark_mzn_output(verbose = False):
    elif verbose:
          print('someone has no colour: 0 of 1 marks')
    
-   if pe_and_yt(student_sol):
+   if antigonish(student_sol):
       marks = marks + 1
       if verbose:
          print('Antigonish has the required colour: 1 of 1 marks')
