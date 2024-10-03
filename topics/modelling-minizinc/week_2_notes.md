@@ -74,46 +74,6 @@ Some of you have already seen the sum operator, but if not we'll see an example 
 
 To think about: What if we want to add other restrictions?
 
-----
-## Fruit shop 
-> Thanks Pat!
-> 
-We are the proud owners of a fruit shop. 
-
-Each day we go to the fruit market and buy fruit to sell.
-
-Each item of fruit has a cost, a profit and quantity available.
-
-We have a budget, i.e. we go to market with so much money.
-
-Assuming we can sell everything that we buy from the market ...
- - buy items of fruit such that it maximises our profit
- - spend no more than your budget
- - don't buy more than is available
- - you cannot sell to the market (i.e. cannot buy negative quantity)
-
-Say we get our data in a format like this:
-
-```
-FRUIT = {apple,banana,cherry,date,elderberry,fig,grapes,honeydew};
-profit = [2,5,3,2,1,3,1,6];
-cost = [8,20,13,9,4,12,3,25];
-quantity = [10,8,10,15,18,6,4,6];
-budget = 550;
-```
-
-I have a canned version, but let's have a go at listing what we want to record and constrain:
-Accounting:
-- something
-- something else
-
-Constraints:
-- something
-- something else
-
-We want to maximise:
-- profit?
-
 
 ----
 ## Production planning
