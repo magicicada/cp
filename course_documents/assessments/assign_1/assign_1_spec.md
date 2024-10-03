@@ -34,7 +34,7 @@ You should typeset Cape Breton as 'Cape-Breton' in your solution (this is what t
 
 You can check your solution against the marking code by running:  
 
-`minizinc colour-ns.mzn | python mark_colour_ns.py` 
+`minizinc colour_ns.mzn | python mark_colour_ns.py` 
 (a report of 6 marks is full marks for those tests. I may add more tests, but the format will remain the same)
 
 
