@@ -9,7 +9,6 @@
 ## Resources:
 
 Other people's intros:
-- https://www.andrew.cmu.edu/user/vanhoeve/summerschool/slides/introduction_1up.pdf
 - https://www.cs.upc.edu/~erodri/webpage/cps/theory/cp/intro/slides.pdf
 - https://ktiml.mff.cuni.cz/~bartak/constraints/intro.html
 - Peter Stuckey's course: https://www.coursera.org/lecture/basic-modeling/1-1-1-first-steps-PYg0S (and the stuff after that)
