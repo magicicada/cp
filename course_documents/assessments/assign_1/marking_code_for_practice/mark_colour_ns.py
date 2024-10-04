@@ -50,9 +50,9 @@ def mark_mzn_output(verbose = False):
    edge_list['Guysborough'] = ['Halifax', 'Pictou', 'Antigonish', 'Richmond']
    edge_list['Antigonish'] = ['Pictou', 'Guysborough', 'Inverness']
    edge_list['Inverness'] = ['Antigonish', 'Guysborough', 'Richmond', 'Victoria']
-   edge_list['Richmond'] = ['Guysborough', 'Inverness', 'Cape_Breton']
-   edge_list['Victoria'] = ['Inverness', 'Cape_Breton']
-   edge_list['Cape_Breton'] = ['Victoria', 'Richmond']
+   edge_list['Richmond'] = ['Guysborough', 'Inverness', 'Cape-Breton']
+   edge_list['Victoria'] = ['Inverness', 'Cape-Breton']
+   edge_list['Cape-Breton'] = ['Victoria', 'Richmond']
    
    student_sol = read_out()
    
