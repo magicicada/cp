@@ -55,6 +55,14 @@ def mark_mzn_output(verbose = False):
    edge_list['Cape-Breton'] = ['Victoria', 'Richmond']
    
    student_sol = read_out()
+   fix_CB = {}
+   for guy in student_sol:
+      if guy == 'Cape_Breton':
+          fix_CB['Cape-Breton'] = student_sol['Cape_Breton'] 
+      else:
+          fix_CB[guy] = student_sol[guy]
+   student_sol = fix_CB
+   
    
    max_marks = 8
    marks = 0
