@@ -28,7 +28,7 @@ def read_out():
    read_sol = {}
    input_stream = sys.stdin
    for line in input_stream:
-      if not line.startswith("-"):
+      if not line.startswith("-") and not line.startswith("="):
         split = line.strip().split()
         read_sol[split[0]] = int(split[2].split(";")[0])
    return read_sol
