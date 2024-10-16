@@ -92,7 +92,7 @@ We can now write out an algorithm for enforcing arc consistency:
 
 ```
 function ac(X, D, C):
-    **Takes** variables V, domains D, constraints C
+    **Takes** variables X, domains D, constraints C
     **Gives** arc consistent domains for variables
     set D_new gets empty set
     set todo gets empty set
