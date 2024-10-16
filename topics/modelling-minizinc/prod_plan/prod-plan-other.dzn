@@ -1,0 +1,9 @@
+PRODUCT = {DINGHY, DOREY, SCHOONER, TRAWLER, NARROWBOAT};
+value =  [70, 90, 150, 120, 110];
+RESOURCE = {IRON, WOOD, SMITH, CARPENTER};
+supply = [5000, 7500, 400, 3000];
+demand = [| 15, 10, 10, 10 
+          | 0, 20, 0, 20
+          | 15, 5, 10, 50 
+          | 5, 10, 20, 15
+          | 1, 25, 1, 25 |];

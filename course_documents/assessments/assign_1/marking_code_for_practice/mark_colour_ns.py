@@ -28,7 +28,7 @@ def read_out():
    read_sol = {}
    input_stream = sys.stdin
    for line in input_stream:
-      if not line.startswith("-"):
+      if not line.startswith("-") and not line.startswith("="):
         split = line.strip().split()
         read_sol[split[0]] = int(split[2].split(";")[0])
    return read_sol
@@ -50,11 +50,19 @@ def mark_mzn_output(verbose = False):
    edge_list['Guysborough'] = ['Halifax', 'Pictou', 'Antigonish', 'Richmond']
    edge_list['Antigonish'] = ['Pictou', 'Guysborough', 'Inverness']
    edge_list['Inverness'] = ['Antigonish', 'Guysborough', 'Richmond', 'Victoria']
-   edge_list['Richmond'] = ['Guysborough', 'Inverness', 'Cape_Breton']
-   edge_list['Victoria'] = ['Inverness', 'Cape_Breton']
-   edge_list['Cape_Breton'] = ['Victoria', 'Richmond']
+   edge_list['Richmond'] = ['Guysborough', 'Inverness', 'Cape-Breton']
+   edge_list['Victoria'] = ['Inverness', 'Cape-Breton']
+   edge_list['Cape-Breton'] = ['Victoria', 'Richmond']
    
    student_sol = read_out()
+   fix_CB = {}
+   for guy in student_sol:
+      if guy == 'Cape_Breton':
+          fix_CB['Cape-Breton'] = student_sol['Cape_Breton'] 
+      else:
+          fix_CB[guy] = student_sol[guy]
+   student_sol = fix_CB
+   
    
    max_marks = 8
    marks = 0
