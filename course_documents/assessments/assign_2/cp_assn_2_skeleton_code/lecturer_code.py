@@ -5,7 +5,7 @@ import submitted_solution
 
 
 def run_trial(graph, start, timeout=5000):
-   ilp_result = submitted_solution.run_cp(graph, start_node=start, timeout=timeout)
+   ilp_result = submitted_solution.run_ilp(graph, start_node=start, timeout=timeout)
    cp_result = submitted_solution.run_cp(graph, start_node=start, timeout=timeout)
    return cp_result['num_saved'], ilp_result['num_saved']
 
