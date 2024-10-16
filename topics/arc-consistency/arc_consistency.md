@@ -95,7 +95,7 @@ function ac(X, D, C):
     **Takes** variables V, domains D, constraints C
     **Gives** arc consistent domains for variables
     set D_new gets empty set
-    set todo gets 
+    set todo gets empty set
     for each variable x in X:
         D_new[x] gets D[x]
         todo gets all arcs from x to a constraint involving x
