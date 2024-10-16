@@ -114,7 +114,8 @@ function ac(X, D, C):
                 remove value_x from D_new[x]
                 domain_changed gets True
         if domain_changed:
-            add all arcs from other variables to constraints involving x to todo        
+            add all arcs from other variables to
+                constraints involving x to todo        
 ```
 
 There are three possible outcomes after we run this algorithm:
