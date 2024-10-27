@@ -1,0 +1,5 @@
+ minizinc colour_ns.mzn | python mark_colour_ns.py 
+ minizinc time_intervals.mzn yes_cross.dzn | python mark_castle_visits.py yes_cross.dzn 7 
+ minizinc time_intervals.mzn yes_cross_extra.dzn | python mark_castle_visits.py yes_cross_extra.dzn 8 
+ minizinc time_intervals.mzn no_both.dzn 
+ minizinc time_intervals.mzn no_cross_cycle.dzn 
