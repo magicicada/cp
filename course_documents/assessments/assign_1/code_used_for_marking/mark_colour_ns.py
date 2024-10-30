@@ -98,4 +98,9 @@ def mark_mzn_output(verbose = False):
       print('Total marks for colouring NS: ' + str(marks))
    else:
       print(marks)
-mark_mzn_output(verbose = False)
+      
+try:
+  verbose = sys.argv[1]
+except IndexError:
+  verbose = False 
+mark_mzn_output(verbose = verbose)
