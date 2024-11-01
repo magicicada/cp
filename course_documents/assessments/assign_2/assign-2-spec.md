@@ -23,3 +23,15 @@ Implement an ILP model for this problem using either PuLP or OR-Tools.  Details 
 ## Task 3: (weighted 80\%)
 Write *at most one page* comparing the performance of your CP and your ILP models.  This should include a short section describing any interesting insights that you used in designing your models, a section outlining your experimental pipeline and why you have chosen to design it as you have, a plot or table showing the performances of the two models, and a section describing what you see in the results.  Submit this as a PDF.  Do not submit more than one page.  We will only read and mark one page.  
 
+## FAQ: What if I can't get Task 1 and 2 working, how can I do Task 3?
+Even if you cannot get both models working, you can still get part marks for Task 3. The suggestions below are only for it you cannot get both models working. 
+
+For the visualisation or table and description of results:
+- If you have one runnable model (that may be giving incorrect answers):
+    - Compare your model against itself in some meaningful way.  For example, if you have implemented the Minizinc model, you could compare performance of different solvers on your Minizinc model (https://python.minizinc.dev/en/latest/getting_started.html#using-different-solvers), or compare with and without some optimisation you've made.  You could also compare your solver's performance on different types of instances - this would need a different type of visualisation than the one we say in lecture.
+- If both models are runnable (but again may be giving incorrect answers):
+    - compare the models against each other as you would if they were correct, and we will still mark the visualisation/table reporting approach and the discussion of what you can see in those results.
+
+For the section on pipeline: you can describe this even if you don't have a working model, and are using one of the options for runnable but incorrect models above.
+
+For the section on insights about your model or models: reflect on what you can about what does and doesn't work, and why you think that might be.  
