@@ -124,8 +124,12 @@ def do_testing(verbose = False):
   if verbose:
     print("Total:  " + str(marks) + " of a possible " + str(max_marks))
   return marks
-  
-print(do_testing(verbose = False))
+
+try:
+  verbose = sys.argv[3]
+except IndexError:
+  verbose = False 
+print(do_testing(verbose = verbose))
 
 
 # #  This is example marking code for a typical instance - for some (eg edge or unsatisfiable) instances I test with, not all marks will be available.
