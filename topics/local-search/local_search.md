@@ -1,12 +1,3 @@
----
-tags: cp, cp_2022, teaching
----
-
-# Week 5 - October 19
-# :clipboard: Admin :clipboard:
-- This afternoon: discussion of Assignment 1 and questions about Assignment 2
-- Marking code for assign 1 coming soon: if you think your mark doesn't match, let me know!
-- There was a request for an example of how LP relaxations can help with an ILP.  Here's a pointer to one showing some bounding:  http://theory.stanford.edu/~trevisan/cs261/lecture07.pdf
 
 # Local and heuristic-non-optimal searches
 So far we've talked about searches that are guaranteed to find an optimal answer (or the correct answer if decision version).
