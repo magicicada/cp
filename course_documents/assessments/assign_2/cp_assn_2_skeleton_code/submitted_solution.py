@@ -20,7 +20,7 @@ def run_ilp(instance_graph, start_node = 1, timeout=1000):
 
 
 #
-# This function should run your ILP implementation
+# This function should run your CP implementation
 # for infectious vaccine 
 # - instance_graph will be a networkx graph object
 # - start_node is the node where the fire starts
