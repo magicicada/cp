@@ -1,5 +1,0 @@
-    d="your_solution"
-    minizinc "$d"/colour_ns.mzn | python mark_colour_ns.py 
-    minizinc "$d"/time_intervals.mzn good_intervals.dzn | python mark_castle_visits.py good_intervals.dzn 9
-    minizinc "$d"/time_intervals.mzn unsat_must_and_not.dzn | python should_be_unsat.py
-    
