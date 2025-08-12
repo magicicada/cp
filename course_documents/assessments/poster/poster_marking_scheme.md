@@ -1,10 +1,10 @@
-# CP 2024 Poster Marking Scheme - WARNING NOT YET UPDATED FOR 2025
+# CP 2024 Poster Marking Scheme - DRAFT
 
 This assessment is band marked, which means you won't get a numerical mark, but instead a band - similar to a dissertation.  When marking, we will consider the following:
 
 
-## Poster: 
-- Content (weighted 70%): 
+## Poster submission - total 40% of grade: 
+- Content (weighted 80%): 
     - Introduction and relationship to wider field
         - Is the choice of paper motivated, is the problem considered well-introduced and clear? 
         - Is it clear that the student understands the approaches used?
@@ -18,8 +18,8 @@ This assessment is band marked, which means you won't get a numerical mark, but 
     - Concluding thoughts
     	- Has the student summarised the most important aspects of the paper?
       	- Is it clear that the student understands why these are important, and has made suitable choices on what to emphasise?
-- Presentation (weighted 20%):
-- when grading take into account:
+- Language and image use (weighted 20%):
+	- when grading take into account:
     - Layout
     - Readability
     - Language (grammar, etc)
