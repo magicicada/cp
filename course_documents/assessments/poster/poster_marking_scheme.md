@@ -25,10 +25,10 @@ This assessment is band marked, which means you won't get a numerical mark, but 
     - Language (grammar, etc)
 
 
-## Question-answer on poster day (weighted 10%):
+## Question-answer on poster day (10% of grade):
 - when grading take into account:
     - did student understand question, clarify if needed?
     - is the answer logical and thoughtful?
     - if the student doesn't know the answer, they may conjecture thoughtfully so long as they make this clear.  
-    - is the answer concise, fitting within a 2-minute window?
+    - is the answer concise, including relevant points?
 
