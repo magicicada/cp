@@ -1,6 +1,6 @@
-# CP Assessment: Research Poster
+# CP Assessment: Research Poster - DRAFT
 
-- Live presentations on poster day: TBD
+- Ther
 
 *You may complete the poster portion of this assessment individually or in pairs.  The description that follows is for the individual option - the paired option differences are in a section at the end.*
 
@@ -8,7 +8,7 @@ For this assessment, you will make an A2 research poster about a published paper
 
 ### What should be on your poster
 
-Your poster should be A2 in size, and should include a title, an introduction to the topic of the paper, a section describing the results, a section describing how you think the paper fits into the wider field of CP or other computing topics (you might want to comment on the importance of an application, or the importance of a technique), a section describing the limitations of the paper or any criticism you have of it, and a short conclusion.  
+Your poster should be A2 in size, and should include a title, an introduction to the topic of the paper, a section describing the results, a section describing how you think the paper fits into the wider field of CP/optimisation or other computing topics (you might want to comment on the importance of an application, or the importance of a technique), a section describing the limitations of the paper or any criticism you have of it, and a short conclusion.  
 
 ### How to submit your poster
 Please submit your poster on Moodle as a PDF file.  Ensure it is A2 size.  You should print your poster for poster-day - you can either print it as a research poster in one piece, or you can print A4 sheets and tape them together - either is fine.  If you want a one-piece research poster and cost is a barrier, contact the lecturer - she can print a small number of these posters.  
