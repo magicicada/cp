@@ -1,0 +1,6 @@
+I will be automatically marking your minizinc and ILP model code.  This means it is very important that you exactly follow specifications, including input, output, and naming requirements.  Submissions that don't follow these (and that the automarking therefore won't work properly for) will at the least incur a 2-band penalty per error, or at worst (where the fix is not trivial) receive a zero.  
+
+I will be running the models on a stlinux node, using the versions of MiniZinc, solvers, and python installed there.  You should ensure that your code runs using the commands specified in the assignment spec.  Submissions that do not run on stlinux will receive zeros.  
+
+You should have a departmental account that allows you to access the stlinux nodes via ssh.  If you do not, you can apply for one using the helpdesk.
+
