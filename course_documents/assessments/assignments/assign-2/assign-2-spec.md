@@ -9,7 +9,7 @@ I will be marking this on an stlinux node: be sure that your code will run there
 
 Task: 
 
-You will write an ILP model using ORTools in Python model to compute a minimum dominating set on an input graph.
+You will write an ILP model using ORTools in Python model to compute a distance-k minimum dominating set on an input graph.
 
 Distance dominating Set:
 
