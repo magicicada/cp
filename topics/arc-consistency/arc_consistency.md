@@ -1,5 +1,3 @@
-# Week 3 
-
 # Search and Arc Consistency
 
 Recall: we're dealing with CSPs, which consist of
