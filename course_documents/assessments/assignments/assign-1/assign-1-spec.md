@@ -8,9 +8,8 @@ I will be marking this on an stlinux node: be sure that your code will run there
 Task: 
 
 You will write a MiniZinc model to compute a minimum dominating set on an input graph.
-This is a formative assignment, and is worth no marks, but will give you an opportunity to make sure that you can write and run models in a way consistent with the automated marking, and help you in your summative assignments. 
 
-Dominating Set:
+Distance dominating Set:
 
 Given a graph G = (V, E) a *distance k dominating set* S is a subset of V such that every vertex in V is either in S or is within distance k (counting edges) to a vertex in S. A minimum distance k dominating set is a smallest such set.
 
