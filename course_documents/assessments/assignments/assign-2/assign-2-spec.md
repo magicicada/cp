@@ -1,5 +1,7 @@
 Assignment 2: ILP model of variable-distance dominating set
+
 Worth 5% of course grade
+
 Automatically marked
 
 Be sure to carefully follow the specification, as this code is being automatically marked!
