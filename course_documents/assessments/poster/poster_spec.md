@@ -1,6 +1,4 @@
-# CP Assessment: Research Poster - DRAFT
-
-- Ther
+# CP Assessment: Research Poster
 
 *You may complete the poster portion of this assessment individually or in pairs.  The description that follows is for the individual option - the paired option differences are in a section at the end.*
 
@@ -43,16 +41,16 @@ Applications papers:
 - https://link.springer.com/chapter/10.1007/978-3-319-44953-1_34
 - https://link.springer.com/article/10.1007/s10601-014-9169-3
 
-Machine learning:
-- https://link.springer.com/chapter/10.1007/978-3-319-18008-3_8
-- https://link.springer.com/chapter/10.1007/978-3-319-09584-4_3
-
-There are many more out there - following citations from these will help you find them.  
+There are many more out there - following citations from these will help you find them.  We can suggest looking at this past year's CP conference (https://cp2025.a4cp.org/accepted_papers.html).
 
 ###  Forbidden papers:
 These are papers that we have seen too many previous posters on.  You are not allowed to do a poster on:
 - https://drops.dagstuhl.de/opus/volltexte/2022/16657/
 - https://link.springer.com/chapter/10.1007/978-3-642-15396-9_37
+
+You should also avoid papers focussing on LLMs in CP - these tend to lack the technical alignment with the course objectives you need to get a good grade. 
+
+You will register your paper choice for poster near the end of October, submit a PDF of your poster in mid-November, and attend poster day in the last week of classes.  All dates on Moodle.  
 
 
 ### Pair poster option  
