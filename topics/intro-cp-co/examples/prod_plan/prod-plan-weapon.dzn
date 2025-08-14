@@ -1,0 +1,9 @@
+PRODUCT = {AXE, SWORD, PIKE, SPEAR, CLUB};
+value =  [110, 180, 150, 170, 110];
+RESOURCE = {IRON, WOOD, SMITH, CARPENTER};
+supply = [5000, 7500, 4000, 3000];
+demand = [| 15, 10, 10, 10 
+          | 20, 0, 20, 0
+          | 15, 5, 10, 10 
+          | 5, 10, 9, 15
+          | 1, 25, 1, 25 |];
