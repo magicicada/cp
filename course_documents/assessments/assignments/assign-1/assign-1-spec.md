@@ -1,6 +1,8 @@
 Assignment 1: MiniZinc model of variable-distance dominating set
 Worth 5% of course grade
 Automatically marked
+** upload exactly one .mzn file to Moodle and nothing else **
+
 
 Be sure to carefully follow the specification, as this code is being automatically marked!
 I will be marking this on an stlinux node: be sure that your code will run there using the instructions below.
