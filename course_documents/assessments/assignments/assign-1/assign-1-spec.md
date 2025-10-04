@@ -36,7 +36,7 @@ where
 
 That is, the graph as specified in the example has five vertices, and the edge set is {(1,2), (1, 4), (2, 3), (3, 4), (3, 5), (4, 5)}.  The graph is undirected.
 
-You should design your model so that the solution is recorded in a 0-1 array called `decision` such that the ith entry in decision is 1 if vertex i is in the dominating set.  You can achieve this by starting with the startup dominating-set-assign-1.mzn file and adding your model to it.  
+You should design your model so that the solution is recorded in a 0-1 array called `decision` such that the ith entry in decision is 1 if vertex i is in the dominating set.  You can achieve this by starting with the startup dist-dominating-set-assign-1.mzn file and adding your model to it.  
 
 
 
@@ -57,7 +57,7 @@ Do not amend your output.  I will pipe this output to a python file that checks 
 For example, I will mark with:
 
 `minizinc dist-dominating-set-assign-1.mzn sample-input-file-1.dzn > output.txt`
-`python dist-dom-set-marking.py sample-input-file-1.dzn output.txt`
+`python3 dist-dom-set-marking.py sample-input-file-1.dzn output.txt`
 
 Which should for that input give me 
 `true,1`
