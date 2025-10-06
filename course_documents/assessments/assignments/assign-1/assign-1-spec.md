@@ -22,11 +22,13 @@ You will take an input graph as a .dzn file (example in `sample-input-file-1.dzn
 
 (values are examples)
 
+```
 n = 5;
 m = 6;
 k = 2
 from = [1,1,2,3,3,4];
 to = [2,4,3,4,5,5];
+```
 
 where 
 - n is the number of vertices
@@ -48,18 +50,20 @@ I will run your assignment submission by running the following from the command 
 
 From which I would expect (for example):
 
-``
+```
 decision = [1, 0, 0, 0, 0];
 ----------
 ==========
-``
+```
 
 Do not amend your output.  I will pipe this output to a python file that checks whether the output is a dominating set on the input graph. 
 
 For example, I will mark with:
 
-`minizinc dist-dominating-set-assign-1.mzn sample-input-file-1.dzn > output.txt`
-`python3 dist-dom-set-marking.py sample-input-file-1.dzn output.txt`
+```
+minizinc dist-dominating-set-assign-1.mzn sample-input-file-1.dzn > output.txt
+python3 dist-dom-set-marking.py sample-input-file-1.dzn output.txt
+```
 
 Which should for that input give me 
 `true,1`
