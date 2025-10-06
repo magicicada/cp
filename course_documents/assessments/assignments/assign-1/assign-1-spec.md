@@ -67,7 +67,7 @@ python3 dist-dom-set-marking.py sample-input-file-1.dzn output.txt
 
 Which should for that input give me 
 `true,1`
- indicating that the solution the model found is a k distance dominating set (the 'true') and that it is of size 1. I would then use that for determining a grade. 
+ indicating that the solution the model found is a k distance dominating set (the 'true') and that it is of size 1. I would then use that for determining a grade, based on the number of instances that your model solves correctly and whether they are correct in both being a distance dominating set and in being minimal. 
 
 
 I will use several different input files, all with the same format as `sample-input-file-1.dzn`
