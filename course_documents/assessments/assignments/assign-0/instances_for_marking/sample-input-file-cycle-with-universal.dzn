@@ -1,0 +1,8 @@
+n = 6;
+m = 10;
+
+% Undirected edges — only one direction per edge
+% 5-cycle on 1..5: (1-2, 2-3, 3-4, 4-5, 5-1)
+% Plus universal vertex 6 connected to all others
+from = [1, 2, 3, 4, 5, 6, 6, 6, 6, 6];
+to   = [2, 3, 4, 5, 1, 1, 2, 3, 4, 5];
