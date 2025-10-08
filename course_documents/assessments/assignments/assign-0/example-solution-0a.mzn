@@ -20,5 +20,5 @@ constraint
     );
 
 % Objective: minimize the number of chosen vertices
-solve minimize sum(i in 1..n)(decision[i]);
+solve minimize sum(decision);
 
