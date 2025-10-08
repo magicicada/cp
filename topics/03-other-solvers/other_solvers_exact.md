@@ -55,6 +55,17 @@ Subject to constraints:
     - $\forall i \in V, j \in C$ $x_{i, j} \leq w_j$
 
 
+### A nice example using ORTools
+https://colab.research.google.com/drive/1Gxt_sBVOZAaUo_LNvz60e1BacJ_azivs?usp=sharing
+
+Adapted from:
+Blog post: https://phabe.ch/2023/08/07/vertex-coloring-using-ilp/
+
+That's from a student who was taking a course at Bonn - the deep-dive notes on that section are here if you're interested:  https://www.or.uni-bonn.de/~held/hausdorff_school_22/slides/GraphColoringFormulations.pdf
+
+And if you're *really* keen here's a related paper:  https://arxiv.org/pdf/1706.10191
+
+
 ### A PuLP in Python example
 https://colab.research.google.com/drive/1_PIERNAIiQbVuDekkfdIkLQGtY2-dm4m?usp=sharing
 
