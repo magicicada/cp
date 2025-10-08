@@ -1,5 +1,5 @@
 Assignment 1: MiniZinc model of variable-distance dominating set
-- Due Monday, 20 October 2025, 4:30 PM (UK time)
+- Due Monday, 13 October 2025, 4:30 PM (UK time)
 - Worth 5% of course grade
 - Automatically marked
 - **upload exactly one .mzn file to Moodle and nothing else**
