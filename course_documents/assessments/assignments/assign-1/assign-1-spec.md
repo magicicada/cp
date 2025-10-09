@@ -62,7 +62,7 @@ For example, I will mark with:
 
 ```
 minizinc dist-dominating-set-assign-1.mzn sample-input-file-1.dzn > output.txt
-python3 dist-dom-set-marking.py sample-input-file-1.dzn output.txt
+python3 dist-dom-set-marking.py sample-input-file-1.dzn output.txt 2
 ```
 
 Which should for that input give me 
