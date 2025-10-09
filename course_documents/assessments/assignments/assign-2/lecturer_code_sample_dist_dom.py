@@ -3,6 +3,7 @@ import networkx as nx
 import submitted_dist_dom_solution
 
 
+RUNTIME_PRINTING = True
 
 # networkx graph
 def generate_binary_tree_instance(height):
@@ -46,34 +47,48 @@ def skeleton_runs():
     runs_results = {}
     
     # I'll have a variety of instances, here are a few toy ones
-    # as examples      
+    # as examples
+    
+    if RUNTIME_PRINTING:
+        print("Doing path graphs")
     graph = nx.path_graph(6)
     name = "path_6_verts"
     
-    for dist in [1, 2, 5]
-        dom_cand = submitted_dist_dom_solution.run_ilp(graph, distance = dist)
+    for dist in [1, 2, 5]:
+        result_dict = submitted_dist_dom_solution.run_ilp(graph, distance = dist)
+        dom_cand = result_dict["dom_set"]
         runs_results[(name, dist)] = (distance_dominates(graph, dom_cand, dist), len(dom_cand))
     
 
-
-    # in a complete graph one vertex shoudl suffice
+    if RUNTIME_PRINTING:
+        print("Doing complete graphs")
+    # in a complete graph one vertex should suffice
     graph = nx.complete_graph(6)
     name = "complete_graph"
-    for dist in [1, 5]
-        dom_cand = submitted_dist_dom_solution.run_ilp(graph, distance = dist)
+    for dist in [1, 5]:
+        result_dict = submitted_dist_dom_solution.run_ilp(graph, distance = dist)
+        dom_cand = result_dict["dom_set"]
         runs_results[(name, dist)] = (distance_dominates(graph, dom_cand, dist), len(dom_cand))
 
 
-   
+    if RUNTIME_PRINTING:
+        print("Doing grid graphs")
     graph = nx.grid_2d_graph(5, 5)
     name = "grid"
-    for dist in [1, 3]
-        dom_cand = submitted_dist_dom_solution.run_ilp(graph, distance = dist)
+    for dist in [1, 3, 5, 20]:
+        result_dict = submitted_dist_dom_solution.run_ilp(graph, distance = dist)
+        dom_cand = result_dict["dom_set"]
         runs_results[(name, dist)] = (distance_dominates(graph, dom_cand, dist), len(dom_cand))
 
 
     return runs_results
    
+
+def nice_print(dict_of_results):
+    for (graph, distance) in dict_of_results:
+        (dominates, size) = dict_of_results[(graph, distance)]
+        print("On graph " + str(graph) + " with distance " + str(distance) + ": proposed dominating set of size " + 
+              str(size) + " dominates is " + str(dominates)) 
+    
    
-   
-print(skeleton_runs())
+nice_print(skeleton_runs())

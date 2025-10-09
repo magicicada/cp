@@ -2,6 +2,8 @@ import random
 import networkx as nx
 import ortools
 
+# THIS FILE IS WHERE STUDENTS SHOULD DO THEIR WORK
+
 
 #
 # This function should run your ILP implementation
@@ -16,4 +18,10 @@ import ortools
 # (The dictionary structure is so you can return other things if it's 
 # useful for your debugging)
 def run_ilp(instance_graph, distance = 1, timeout=1000):
-  return {'dom_set': None}
+  #  in here you can modify the graph to get whatever format you need, implement your ILP, call your solver
+  #  and then translate the result back into a set of nodes from instance_graph   
+  
+  #  This is obviously not a solution, but just me choosing a single vertex from the graph
+    dom_set = [list(instance_graph.nodes())[0]]
+    
+    return {'dom_set': dom_set}
