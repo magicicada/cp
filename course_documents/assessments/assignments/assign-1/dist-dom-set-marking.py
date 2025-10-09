@@ -44,7 +44,7 @@ def find_shortest_path(graph, source, target_set):
     path = nx.shortest_path(graph, source, target)
     if len(path) < min:
       min = len(path)
-  return min
+  return min -1
 
 def is_distance_dominated(graph, node, dom_set, k):
   return find_shortest_path(graph, node, dom_set) <= k
@@ -71,7 +71,7 @@ def main():
       if binary_solution[i] == 1:
           node_solution.append(i+1)    
 
-    if nx.distance_dominates(graph, node_solution, distance):
+    if distance_dominates(graph, node_solution, distance):
        marking_string += 'true,'
     else:
        marking_string += 'false,'

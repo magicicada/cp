@@ -50,7 +50,7 @@ def main():
       if binary_solution[i] == 1:
           node_solution.append(i+1)    
 
-    if nx.is_dominating_set(graph, node_solution):
+    if is_dominating_set(graph, node_solution):
        marking_string += 'true,'
     else:
        marking_string += 'false,'
