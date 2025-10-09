@@ -1,6 +1,6 @@
 # Constraint Programming 2025 - Working Space
 
-Now fallow - moving to DCS GitLab:
+Content for CP(M) 2025
 
 https://git.dcs.gla.ac.uk/JessicaEnright/cp
 
