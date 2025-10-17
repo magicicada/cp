@@ -41,6 +41,8 @@ Assignments (30%):
     - Code will be automarked on an stlinux node
 - Assignment 3b: Viva
     - Live approximately 10-minute viva with questions on assignment 3 code and associate graph burning content from papers discussed in lecture       - 10% of grade, held November 25 and 26, band marked
+ 
+      
 Poster (50%):
 - *Formative* Poster registration checkpoint:
     - Register the paper that you plan to present your poster on via Moodle

@@ -1,6 +1,7 @@
 Assignment 0: Dominating Set MiniZinc Model
 Worth 0% of course grade
 Automatically marked
+** upload exactly one .mzn file called dominating-set-assign-0.mzn to Moodle and nothing else **
 
 Be sure to carefully follow the specification, as this code is being automatically marked!
 I will be marking this on an stlinux node: be sure that your code will run there using the instructions below.

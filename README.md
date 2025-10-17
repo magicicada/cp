@@ -1,4 +1,6 @@
 # Constraint Programming 2025 - Working Space
 
-Work in progress for CPM 2025, University of Glasgow, taught by J Enright (@magicicada)
+Content for CP(M) 2025
+
+https://git.dcs.gla.ac.uk/JessicaEnright/cp
 

@@ -36,12 +36,33 @@ def read_solution(filename):
          if line.startswith('decision'):
              return get_just_number_list(line.strip())  
 
+VERY_LARGE_NUMBER = 10000000000
+
+def find_shortest_path(graph, source, target_set):
+  min = VERY_LARGE_NUMBER
+  for target in target_set:
+    path = nx.shortest_path(graph, source, target)
+    if len(path) < min:
+      min = len(path)
+  return min -1
+
+def is_distance_dominated(graph, node, dom_set, k):
+  return find_shortest_path(graph, node, dom_set) <= k
+
+
+def distance_dominates(graph, dom_set, k):
+  for node in graph:
+    if not is_distance_dominated(graph, node, dom_set, k):
+      return False
+  return True
+
 def main():
     
     marking_string = ""
     dzn_file = sys.argv[1]
-    output_file = sys.argv[2]
-    
+    output_file = sys.argv[2]    
+    distance = int(sys.argv[3])    
+
     graph = read_dzn(dzn_file)
 
     binary_solution = read_solution(output_file)
@@ -50,7 +71,7 @@ def main():
       if binary_solution[i] == 1:
           node_solution.append(i+1)    
 
-    if is_dominating_set(graph, node_solution):
+    if distance_dominates(graph, node_solution, distance):
        marking_string += 'true,'
     else:
        marking_string += 'false,'
