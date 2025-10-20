@@ -4,3 +4,5 @@ Content for CP(M) 2025
 
 https://git.dcs.gla.ac.uk/JessicaEnright/cp
 
+Test: checking if pull works
+
