@@ -49,4 +49,6 @@ Two now-old things that were exciting at the time:
 - Alpha-Go https://en.wikipedia.org/wiki/AlphaGo, via
 - Monte Carlo Tree Search
     
-    ![https://en.wikipedia.org/wiki/Monte_Carlo_tree_search#/media/File:MCTS_Algorithm.png](https://en.wikipedia.org/wiki/Monte_Carlo_tree_search#/media/File:MCTS_Algorithm.png)
+![an example image showing monte carlo tree search](image.png)
+
+    By Robert Moss - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=111182752
