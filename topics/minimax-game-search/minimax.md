@@ -28,7 +28,7 @@ minimax( origin, depth, TRUE )
     
 (also from wikipedia, an example tree for a 2-player 2-option game with example leaf values)
     
-![](https://en.wikipedia.org/wiki/Minimax#/media/File:Minimax.svg)
+![https://en.wikipedia.org/wiki/Minimax#/media/File:Minimax.svg](https://en.wikipedia.org/wiki/Minimax#/media/File:Minimax.svg)
 
     
 Let's construct this tree with values for our tic-tac-toe example.  
@@ -49,4 +49,4 @@ Two now-old things that were exciting at the time:
 - Alpha-Go https://en.wikipedia.org/wiki/AlphaGo, via
 - Monte Carlo Tree Search
     
-    ![](https://i.imgur.com/Ox1IcMq.png)
+    ![https://en.wikipedia.org/wiki/Monte_Carlo_tree_search#/media/File:MCTS_Algorithm.png](https://en.wikipedia.org/wiki/Monte_Carlo_tree_search#/media/File:MCTS_Algorithm.png)
