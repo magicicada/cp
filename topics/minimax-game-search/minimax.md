@@ -27,9 +27,10 @@ minimax( origin, depth, TRUE )
 ```
     
 (also from wikipedia, an example tree for a 2-player 2-option game with example leaf values)
-    
-![https://en.wikipedia.org/wiki/Minimax#/media/File:Minimax.svg](https://en.wikipedia.org/wiki/Minimax#/media/File:Minimax.svg)
 
+![an example of a minimax tree for a two palyer game, from wikipedia](image-1.png)
+
+By Nuno Nogueira (Nmnogueira) - Own work using: http://en.wikipedia.org/wiki/Image:Minimax.svg, created in Inkscape by author, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=2276653
     
 Let's construct this tree with values for our tic-tac-toe example.  
     
