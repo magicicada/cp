@@ -29,18 +29,18 @@ Example: live example with vertex cover
 
 
 Let's look at some pseudocode (courtesy of Wikipedia):
-![](https://i.imgur.com/RJbd5oB.png)
+![example of hill climing pseudocode from wikipedia](image.png)
 
 
 An important observation: hill climbing will eventually give an optimal answer for a **convex problem** - this is a problem without local maxima. (I'll draw an example squiggly line)
 
 Hill climbing is good at this kind of thing:
-![](https://i.imgur.com/64qpln1.jpg)
+![a relatively smooth hill with one peak](image-1.png)
 
 But not great at these kinds of things:
 
 
-![](https://i.imgur.com/uXGEe4a.png)
+![a jagged range of mountains with several peaks](image-2.png)
 
 
 
@@ -101,7 +101,7 @@ Intuition:
 - very related to simulated annealing
 
 Let's look at pseudocode (courtesy of wikipedia)
-![](https://i.imgur.com/6Bej3m9.png)
+![pseudocode for tabu search](image-3.png)
 
 We can get fancier with other kinds of 'memory' lists - but that's a bit beyond what we'll talk about. 
 
