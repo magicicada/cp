@@ -27,16 +27,14 @@ What do these notions look like in a search tree?
 
 ## Phase transitions in various problems
     
-If we have an idea of a characteristic of instances that move them from under to over constrained, we might plot runtime of our solver as a function of that parameter.  We sometimes see what is called a *phase transition* when we do this.  it usually looks something like this:
-    
-> <insert image>
+If we have an idea of a characteristic of instances that move them from under to over constrained, we might plot runtime of our solver as a function of that parameter.  We sometimes see what is called a *phase transition* when we do this.  
     
 We'll look at some examples as we go along.  
     
 Side note: the phrase *phase transition* is from chemistry/physics - as in the transition from liquid to solid.
     
 Example from an (older) paper on colouring at https://www.sciencedirect.com/science/article/pii/0004370295000445
-    ![](https://i.imgur.com/rishTgw.png)
+  ![illustration of. acolouring phase transition](image.png)
 
 Or even more vintage:
     https://www.dcs.gla.ac.uk/~pat/cpM/papers/cheeseman91where.pdf
