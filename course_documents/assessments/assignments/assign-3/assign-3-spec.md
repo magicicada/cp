@@ -45,6 +45,7 @@ where
 That is, the graph as specified in the example has five vertices, and the edge set is {(1,2), (1, 4), (2, 3), (3, 4), (3, 5), (4, 5)}.  The graph is undirected.
 
 
-I have provided a stub for both pieces of code.  In general, these follow the pattern of the stubs for the two previous assignments, and we will also discuss these in lecture, bring any questions to lecture on Wednesday, November 12th.
+I have provided a stub for both pieces of code.  In general, these follow the pattern of the stubs for the two previous assignments, and we will also discuss these in lecture, bring any questions to lecture on Wednesday, November 12th.  I will update this file with FAQs after that. 
+
 
 
