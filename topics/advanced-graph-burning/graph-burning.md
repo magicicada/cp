@@ -12,7 +12,7 @@ https://www.mdpi.com/2227-7390/10/15/2777
 Parameterized complexity (this in less detail):
 https://arxiv.org/pdf/2007.08811
 
-A greedy heuristic algorithm (detail):
+A greedy heuristic algorithm (less detail):
 https://arxiv.org/abs/2401.07577
 
 An exact row-generation algorithm (integer programming): https://arxiv.org/abs/2404.17080
