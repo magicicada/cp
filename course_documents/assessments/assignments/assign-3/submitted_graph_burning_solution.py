@@ -20,7 +20,7 @@ import ortools
 # welcome to compute in that structure and then translate. 
 # (The dictionary structure is so you can return other things if it's 
 # useful for your debugging)
-def run_ilp(instance_graph, distance = 1, timeout=1000):
+def run_ilp(instance_graph, timeout=1000):
   #  in here you can modify the graph to get whatever format you need, implement your ILP, call your solver
   #  and then translate the result back into a set of nodes from instance_graph   
   

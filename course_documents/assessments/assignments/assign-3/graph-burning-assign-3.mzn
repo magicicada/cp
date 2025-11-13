@@ -15,3 +15,4 @@ array[0..n] of var int: decision_1;
 % decision_2[i, j] should be set to 1 if you choose to burn vertex i at time j, 0 otherwise
 array[0..n,0..n] of var int: decision_2;
 
+solve satisfy;
