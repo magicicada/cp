@@ -94,8 +94,7 @@ Some variables and how we interpret them:
 - $d_{x,t}$ gets $1$ if vertex $x$ is burned at or before $t$, 0 otherwise
 
 
-![](https://i.imgur.com/hqqVgbt.png)
-
+![an image giving detail of a specific ILP for firefighter](image.png)
 
 ## How do we solve ILPs
 In many cases, similar ways to how we solve CPs - branch and bound is popular.  
@@ -115,7 +114,7 @@ In particular, the solution to the relaxation is *as good or better* than the be
 
 Let's look at a picture from wikipedia:
 
-![](https://i.imgur.com/IXuusZm.png)
+![an image from wikimedia commons shoeing an ILP with an LP relaxation](image-1.png)
 (CC-BY)
 Fanosta - Derivative work based on IP polytope with LP relaxation.png by Sdo
 Polytopes of all feasible integer points and of the LP relaxation to the integer linear program max $\{ y | -x+y <= 1; 3x + 2y <= 12; 2x + 3y <= 12; x,y \in Z_+ \}$.
@@ -137,7 +136,7 @@ Various solver approaches exist, and often combination ones work out the best.  
 ### Davis–Putnam–Logemann–Loveland (DPLL) algorithm
 
 (from Wikipedia)
-![](https://i.imgur.com/NBxKUOs.png)
+![an image of speudocode for the DPLL algorithm](image-2.png)
 
 - Unit propagation is something we can do when a clause has only one literal - it is a *unit clause*.  Then we know that literal must be satisfied, and so we can record that, remove any clause with that literal in it, and remove the negation of the literal from any clause. 
 - Pure literal assignment is something we do when a variable only appears as a positive or only as a negative literal.  Then we can assign the value that satisfies that literal and remove any clause with it in. 

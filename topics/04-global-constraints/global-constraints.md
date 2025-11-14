@@ -22,7 +22,7 @@ Remember our requirement from assignment 1 that all arrivals must be on differen
 n-Queens is a classic problem used to introduce alldifferent (and a fun problem!) so we'll discuss it.  
 
 8-queens:
-![](https://i.imgur.com/mZhwpU3.png)
+![image of the n-queens problem from wikimedia commons](image.png)
 (User:Lee Daniel Crocker - modified by Fispaul at da.wikipedia, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons)
 
 ---
@@ -47,7 +47,7 @@ constraint alldifferent([ X[i] - i + 1| i in 1..n]);
 solve satisfy;
 ```
 Partial search tree from http://www.dcs.gla.ac.uk/~pat/cpM/minizincCPM/tutorial/minizinc-tute.pdf:  
-![](https://i.imgur.com/GGNiSsE.png)
+![image of a partial tree search for the n-queens problem](image-1.png)
 
 
 So hopefully I've convinced you that it's convenient for encoding.  Let's talk inference (in a smaller pseudo-code example):
@@ -92,8 +92,8 @@ Proof sketch where $V_1$ is set of variables, $V_2$ is set of values:
 Alright, so we're only interested in edges that are in *some* max matching, but how can we tell that?
 
 Jack Edmonds and Claude Berge can help:
-![](https://i.imgur.com/9yXLe69.png)
-![](https://i.imgur.com/nWqmcrA.png)
+![an image of edmonds reclining on a rock with complexity classes written on it](image-2.png)
+![an image of Claude Berge in an office with games and a weird face doll](image-3.png)
 
 (claim due to Berge, algorithm from Edmonds)
 ---

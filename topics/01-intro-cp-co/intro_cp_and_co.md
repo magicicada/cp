@@ -189,7 +189,7 @@ To MiniZinc!
 ----
 ## Crystal maze puzzle 
 
-![](https://i.imgur.com/BwRwONj.png)
+![crystal maze puzzle](image.png)
 
 Put the numbers 0 to 7 in the circles so that no two adjacent circles have consecutive numbers.
 
