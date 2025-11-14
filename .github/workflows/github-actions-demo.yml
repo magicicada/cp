@@ -1,0 +1,5 @@
+            - name: Markdown to PDF
+  # You may pin to the exact commit or the version.
+  # uses: valtyr/pandoc-action@cff3b6abcee213e0512955bdf82e63994c64f350
+  uses: valtyr/pandoc-action@v0.1-alpha
+          
