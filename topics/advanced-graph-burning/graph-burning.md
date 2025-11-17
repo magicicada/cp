@@ -4,8 +4,9 @@ We will be working through some advanced work on CP and ILP modelling using the 
 
 Here are links to the papers that we will be looking at, with a brief description of what we discussed in each:
 
-A survey on graph burning in general: https://arxiv.org/abs/2009.10642 
-- here we talked about the definition of the graph burning problem, and mentioned the graph burnign conjecture
+A survey on graph burning in general: https://arxiv.org/abs/2009.10642
+https://arxiv.org/abs/2009.10642
+- here we talked about the definition of the graph burning problem, and mentioned the graph burning conjecture
 
 CP and ILP formulations:
 https://www.mdpi.com/2227-7390/10/15/2777
