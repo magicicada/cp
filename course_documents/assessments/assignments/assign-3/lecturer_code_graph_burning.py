@@ -141,8 +141,8 @@ def do_ilp_run(graph, result_dict, name_graph = ""):
 def run_dual_trials(graph, result_dict, name_graph = "", 
                     name_of_minizinc = "graph-burning-assign-3.mzn"):
     print("running " + name_graph)
-    do_minizinc_run(graph, result_dict, name_graph = name_graph, name_of_minizinc = name_of_minizinc)
-#     do_ilp_run(graph, result_dict, name_graph = name_graph)
+    do_minizinc_run(graph, result_dict, name_graph = name_graph, name_of_minizinc = name_of_minizinc)    
+    do_ilp_run(graph, result_dict, name_graph = name_graph)
 
 def skeleton_runs():
     name_of_minizinc = "graph-burning-assign-3.mzn"
