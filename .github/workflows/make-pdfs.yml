@@ -1,0 +1,16 @@
+on:
+  push:
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: convert md to pdf
+        uses: docker://dalibo/pandocker:stable
+        with:
+          entrypoint: /bin/sh
+          args: -c "find . -name \*.md -type f -exec sh -c 'mkdir -p output/$(dirname {}) && pandoc {} -o output/{}.pdf --resource-path=$(dirname {}) --pdf-engine=lualatex -V mainfont:DejaVuSerif -V sansfont:DejaVuSans -V monofont:DejaVuSansMono ' \;"
+      - uses: actions/upload-artifact@master
+        with:
+          name: output
+          path: output
