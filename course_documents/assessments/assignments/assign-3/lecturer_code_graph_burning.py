@@ -35,7 +35,7 @@ def translate_dec_1(dec_1):
     for vertex in range(len(dec_1)):
         if dec_1[vertex] > -1:
             t = dec_1[vertex]
-            if burning_seq[t] > -1:
+            if burning_seq[t] is not None and burning_seq[t] > -1:
                 #then we have multiple burns at the same time, not valid
                 return None
             burning_seq[t] = vertex
@@ -129,7 +129,7 @@ def do_minizinc_run(graph, result_dict, name_graph = "", name_of_minizinc ="grap
     burning_seq = parse_minizinc_result(result)
     graph = nx.Graph()
     for edge in range(len(from_list)):
-        graph.add_edge(from_list[edge], to_list[edge])
+        graph.add_edge(from_list[edge]-1, to_list[edge]-1)
     
     result_dict[(name_graph, "mzn")] = (is_a_burning_seq(graph, burning_seq), len(burning_seq))
 
@@ -142,7 +142,7 @@ def run_dual_trials(graph, result_dict, name_graph = "",
                     name_of_minizinc = "graph-burning-assign-3.mzn"):
     print("running " + name_graph)
     do_minizinc_run(graph, result_dict, name_graph = name_graph, name_of_minizinc = name_of_minizinc)
-    do_ilp_run(graph, result_dict, name_graph = name_graph)
+#     do_ilp_run(graph, result_dict, name_graph = name_graph)
 
 def skeleton_runs():
     name_of_minizinc = "graph-burning-assign-3.mzn"
