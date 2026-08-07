@@ -1,7 +1,8 @@
-# Constraint Programming 2025 - Working Space
+# constraint-programming-2026
+Content for CP(M) course 2026: a level-5 course in constraint programming and combinatorial optimisation, offered in the School of Computing Science at the University of Glasgow.
 
-Content for CP(M) 2025
+Work in progress, could change, consider everything draft, etc.  
 
-https://git.dcs.gla.ac.uk/JessicaEnright/cp
+
 
 

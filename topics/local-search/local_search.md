@@ -1,4 +1,3 @@
-
 # Local and heuristic-non-optimal searches
 So far we've talked about searches that are guaranteed to find an optimal answer (or the correct answer if decision version).
 
@@ -19,7 +18,7 @@ We'll talk about:
 - simulated annealing
 - ant colony algorithms
 - Tabu search
-- - genetic algorithms
+- genetic algorithms
 
 
 ## Hill climbing
@@ -77,12 +76,12 @@ s <-- s_0
 for k in [0 .. k_{max}]:
     T <-- temperature schedule at time k
     s_{new} <-- a random neighbour of s
-    if P(E(s), E(s_{new}, T) >= random number in (0, 1):
+    if P(E(s), E(s_{new}, T)) >= random number in (0, 1):
         s <-- s_{new}
 return s
         
 ```
-Setting the $P$ and $E$ functions, temperature schedule, as well as the parameters $k_{max}$ is problem-specific. Sometimes the neighbour generation function includes longer jumps as well (helps with escapting local maxima/minima).
+Setting the $P$ and $E$ functions, temperature schedule, as well as the parameters $k_{max}$ is problem-specific. Sometimes the neighbour generation function includes longer jumps as well (helps with escaping local maxima/minima).
 
 
 Simulated annealing is popular for traveling salesperson (TSP). 
@@ -125,7 +124,7 @@ while we're not done:
 report the best solution
 ```
 
-Transition rules and pheromone updates are problem-specific.ß
+Transition rules and pheromone updates are problem-specific.
 
 
 ## Genetic algorithms

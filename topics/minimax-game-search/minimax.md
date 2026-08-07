@@ -9,7 +9,7 @@ What do we mean by game search?
 
 (courtesy of wikipedia, some pseudocode)
 ```
-function  minimax( node, depth, maximizingPlayer ) is
+function minimax( node, depth, maximizingPlayer ) is
     if depth = 0 or node is a terminal node then
         return the heuristic value of node
     if maximizingPlayer then
@@ -34,7 +34,7 @@ By Nuno Nogueira (Nmnogueira) - Own work using: http://en.wikipedia.org/wiki/Ima
     
 Let's construct this tree with values for our tic-tac-toe example.  
     
-What does this tell us about games?  How canwe interpret the value at the root?
+What does this tell us about games?  How can we interpret the value at the root?
     
 ## How can we make this faster?
 Without improvements, minimax will construct the entire game tree.
@@ -44,12 +44,12 @@ We can deploy many tricks!
 - hash tables for repeat states
 - node ordering (maybe find a win faster)
 - trickery to make at-node computation faster
-- if we're not likely to solve exactly can use node value heuristics
+- if we're not likely to solve exactly, we can use node value heuristics
     
 Two now-old things that were exciting at the time:
-- Alpha-Go https://en.wikipedia.org/wiki/AlphaGo, via
-- Monte Carlo Tree Search
+- Alpha-Go https://en.wikipedia.org/wiki/AlphaGo, via Monte Carlo Tree Search
+- Monte Carlo Tree Search, more generally
     
 ![an example image showing monte carlo tree search](image.png)
 
-    By Robert Moss - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=111182752
+By Robert Moss - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=111182752

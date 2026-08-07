@@ -1,0 +1,83 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.7\baselineskip}
+
+\begin{document}
+
+\section{Game Search}
+
+This is squarely in the `other solvers' category, but I've had a few requests.
+
+What do we mean by game search?
+
+\begin{quote}
+\emph{(tic-tac-toe example)}
+\end{quote}
+
+\textbf{Minimax} is the basic game search. The name comes from finding the \emph{min} of the \emph{max}.
+
+(courtesy of Wikipedia, some pseudocode)
+
+\begin{verbatim}
+function minimax( node, depth, maximizingPlayer ) is
+    if depth = 0 or node is a terminal node then
+        return the heuristic value of node
+    if maximizingPlayer then
+        value := -infinity
+        for each child of node do
+            value := max( value, minimax( child, depth - 1, FALSE ) )
+        return value
+    else (* minimizing player *)
+        value := +infinity
+        for each child of node do
+            value := min( value, minimax( child, depth - 1, TRUE ) )
+        return value
+(* Initial call *)
+minimax( origin, depth, TRUE )
+\end{verbatim}
+
+(also from Wikipedia, an example tree for a 2-player 2-option game with example leaf values)
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{image-1.png}
+    \caption{An example of a minimax tree for a two-player game. \emph{(By Nuno Nogueira (Nmnogueira) -- own work using \url{http://en.wikipedia.org/wiki/Image:Minimax.svg}, created in Inkscape by author, CC BY-SA 2.5, \url{https://commons.wikimedia.org/w/index.php?curid=2276653}.)}}
+\end{figure}
+
+Let's construct this tree with values for our tic-tac-toe example.
+
+What does this tell us about games? How can we interpret the value at the root?
+
+\subsection{How can we make this faster?}
+
+Without improvements, minimax will construct the entire game tree.
+
+We can deploy many tricks!
+\begin{itemize}
+    \item alpha-beta pruning
+    \item hash tables for repeat states
+    \item node ordering (maybe find a win faster)
+    \item trickery to make at-node computation faster
+    \item if we're not likely to solve exactly, we can use node value heuristics
+\end{itemize}
+
+Two now-old things that were exciting at the time:
+\begin{itemize}
+    \item Alpha-Go \url{https://en.wikipedia.org/wiki/AlphaGo}, via Monte Carlo Tree Search
+    \item Monte Carlo Tree Search, more generally
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{image.png}
+    \caption{An example showing Monte Carlo Tree Search. \emph{(By Robert Moss -- own work, CC BY-SA 4.0, \url{https://commons.wikimedia.org/w/index.php?curid=111182752}.)}}
+\end{figure}
+
+\end{document}

@@ -1,0 +1,420 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.7\baselineskip}
+
+\begin{document}
+
+\section{Introduction to Constraint Programming and Combinatorial Optimisation}
+
+\subsection{Learning aims}
+
+By the end of this session, students should be able to:
+\begin{itemize}
+    \item distinguish between decision and optimisation problems;
+    \item recognise several common families of combinatorial problems and solver technologies;
+    \item describe a constraint satisfaction problem in terms of variables, domains, and constraints; and
+    \item begin modelling problems in MiniZinc.
+\end{itemize}
+
+\subsection{Combinatorial problems}
+
+In this course we focus on \emph{discrete} problems: the choices are drawn from
+finite and countable sets rather than from a continuous range of real
+values.\footnote{Mostly! We do look briefly at linear relaxations, which involve the real numbers.}
+Many familiar computer-science problems have this form, including graph
+colouring, satisfiability, scheduling, and routing.
+
+An \emph{optimisation problem} asks for a feasible solution that is best
+according to some objective. Examples include finding the largest clique in a
+graph, producing the shortest schedule, or maximising the value of a production
+plan. A corresponding \emph{decision problem} asks whether a solution meeting a
+specified threshold exists. Decision versions are particularly important in
+complexity theory and in the study of NP-completeness.
+
+
+In lecture we will look briefly at three example problems: maximum clique, graph colouring, and boolean satifiability. 
+
+\subsubsection{Example: the clique problem}
+
+Let $G=(V,E)$ be a finite simple undirected graph (all of my graphs are, unless I tell you otherwise). A subset $S\subseteq V$ is a
+\emph{clique} if every pair of distinct vertices in $S$ is joined by an edge;
+that is,
+\[
+    \forall u,v\in S,\quad u\neq v \Longrightarrow \{u,v\}\in E.
+\]
+
+The \emph{decision version} of the clique problem is defined as follows:
+\begin{description}
+    \item[Instance:] an undirected graph $G=(V,E)$ and an integer
+    $k$ with $1\leq k\leq |V|$;
+    \item[Question:] does there exist a set $S\subseteq V$ such that
+    $|S|\geq k$ and $S$ is a clique in $G$?
+\end{description}
+The output is therefore either \emph{yes} or \emph{no}. This decision problem
+is commonly denoted by \textsc{Clique}.
+
+The corresponding \emph{optimisation problem}, \textsc{Maximum Clique}, is:
+\begin{description}
+    \item[Instance:] an undirected graph $G=(V,E)$;
+    \item[Feasible solutions:] all subsets $S\subseteq V$ that form cliques in
+    $G$;
+    \item[Objective:] maximise $|S|$.
+\end{description}
+The optimal objective value is the \emph{clique number} of $G$, denoted
+\[
+    \omega(G)=\max\{\,|S|:S\subseteq V \text{ and } S \text{ is a clique}\,\}.
+\]
+
+In lecture we will draw an example on the visualiser. 
+
+
+\subsubsection{Example: the graph-colouring problem}
+
+Let $G=(V,E)$ be a finite simple undirected graph and let $k$ be a positive
+integer. A \emph{proper $k$-colouring} of $G$ is a function
+\[
+    c:V\longrightarrow \{1,\ldots,k\}
+\]
+such that adjacent vertices receive different colours:
+\[
+    \forall\{u,v\}\in E,\quad c(u)\neq c(v).
+\]
+
+The \emph{decision version} of the graph-colouring problem is:
+\begin{description}
+    \item[Instance:] an undirected graph $G=(V,E)$ and a positive integer $k$;
+    \item[Question:] does there exist a proper $k$-colouring of $G$?
+\end{description}
+This problem is denoted by \textsc{$k$-Colourability} when $k$ is fixed. In
+particular, \textsc{3-Colourability} asks whether the vertices of $G$ can be
+properly coloured using at most three colours.
+
+The corresponding \emph{optimisation problem}, \textsc{Minimum Graph
+Colouring}, is:
+\begin{description}
+    \item[Instance:] an undirected graph $G=(V,E)$;
+    \item[Feasible solutions:] all proper colourings of $G$;
+    \item[Objective:] minimise the number of colours used.
+\end{description}
+The optimal objective value is the \emph{chromatic number} of $G$, denoted
+\[
+    \chi(G)=\min\{\,k:G\text{ has a proper }k\text{-colouring}\,\}.
+\]
+
+In lecture we will draw an example on the visualiser.
+
+\subsubsection{Example: the satisfiability problem}
+
+Let $F$ be a propositional formula over a finite set of Boolean variables
+$X=\{x_1,\ldots,x_n\}$. A \emph{truth assignment} is a function
+\[
+    \alpha:X\longrightarrow\{\mathit{false},\mathit{true}\}.
+\]
+The assignment $\alpha$ \emph{satisfies} $F$ if evaluating $F$ under $\alpha$
+produces the value $\mathit{true}$.
+
+The \emph{decision problem} \textsc{SAT} is:
+\begin{description}
+    \item[Instance:] a propositional formula $F$;
+    \item[Question:] does there exist a truth assignment $\alpha$ that satisfies
+    $F$?
+\end{description}
+If $F$ is in conjunctive normal form and every clause contains exactly three
+literals, the restricted problem is called \textsc{3-SAT}.
+
+A natural optimisation variant is \textsc{Max-SAT}. Let
+$F=C_1\land\cdots\land C_m$ be a formula in conjunctive normal form. Then:
+\begin{description}
+    \item[Instance:] the clauses $C_1,\ldots,C_m$ over a set of Boolean
+    variables;
+    \item[Feasible solutions:] all truth assignments to those variables;
+    \item[Objective:] maximise the number of clauses satisfied by the
+    assignment.
+\end{description}
+Writing $[C_i(\alpha)]$ for $1$ when $\alpha$ satisfies $C_i$ and $0$
+otherwise, the optimal value is
+\[
+    \operatorname{MaxSAT}(F)
+    =\max_{\alpha}\sum_{i=1}^{m}[C_i(\alpha)].
+\]
+
+You will have seen examples of this in algorithmics courses because of the important role that SAT plays in complexity theory, but here is another:
+
+Consider the following formula over the variables $x_1,x_2,x_3$:
+\[
+\begin{aligned}
+F={}&(x_1\lor\neg x_2\lor x_3)
+\land(\neg x_1\lor x_2\lor x_3)\\
+&\land(x_1\lor x_2\lor\neg x_3)
+\land(\neg x_1\lor\neg x_2\lor x_3).
+\end{aligned}
+\]
+This is a $3$-CNF formula because it is a conjunction of clauses, each
+containing exactly three literals.
+
+The assignment
+\[
+    \alpha(x_1)=\mathit{true},\qquad
+    \alpha(x_2)=\mathit{false},\qquad
+    \alpha(x_3)=\mathit{true}
+\]
+satisfies $F$. Substituting these values into the clauses gives
+\[
+\begin{aligned}
+    C_1&=(\mathit{true}\lor\mathit{true}\lor\mathit{true}),\\
+    C_2&=(\mathit{false}\lor\mathit{false}\lor\mathit{true}),\\
+    C_3&=(\mathit{true}\lor\mathit{false}\lor\mathit{false}),\\
+    C_4&=(\mathit{false}\lor\mathit{true}\lor\mathit{true}).
+\end{aligned}
+\]
+Every clause evaluates to $\mathit{true}$, so $F$ is a \emph{yes-instance} of
+\textsc{3-SAT}, with $\alpha$ as a satisfying assignment.
+
+
+\subsection{Solver technologies}
+
+There are many general-purpose approaches to discrete decision and optimisation
+problems. The model used to express a problem is often closely connected to the
+solver technology. During the course we will encounter several approaches:
+\begin{itemize}
+    \item constraint-programming solvers based on propagation and search;
+    \item Boolean satisfiability (SAT) solvers;
+    \item integer-programming (IP) and mixed-integer-programming solvers;
+    \item linear-programming methods, including the simplex algorithm; and
+    \item heuristic and metaheuristic methods, which may find good solutions
+    without proving optimality.
+\end{itemize}
+We will focus on CP solvers, and spend some time on SAT and IP solvers, and only briefly discuss the others.  We start with a discussion of a basic exhaustive search, and then move to backtracking search - the basis for most of these approaches.  
+
+\subsubsection{A first approach: exhaustive search}
+
+A first possible approach to a decision problem is to list every possibility and check if it is a solution: for example, if we are looking for a clique of size 5, we could check every set of five vertices.  For SAT we could check every truth assignment to see if any of them satisfy our expression.  This is obviously infeasible in general. 
+
+One step further is tree-based enumeration, where we construct a tree describing a search through solution space.  For the
+maximum-clique problem, for example, we could construct a search tree in which
+each level decides whether a particular vertex belongs to the candidate clique.
+This gives a correct algorithm, but the number of candidates still grows
+exponentially. Modern solvers improve on naive enumeration by pruning choices
+that cannot lead to feasible solutions, as well as using various techniques to choose which branches to expand first.  
+
+Live in lecture we will draw part of a search tree for a small colouring instance, showing where we can prune infeasible branches. 
+
+Tree search will be the basis of most solving approaches that we look at in this course.
+
+\subsection{Constraint programming}
+Now we change tack to discuss constraint programming: a particular way of modelling and solving combinatorial problems.  
+
+Constraint programming (CP) is a framework for modelling and solving
+\emph{constraint satisfaction problems} (CSPs). A CSP is commonly represented
+as a triple
+\[
+    (X,D,C),
+\]
+where:
+\begin{itemize}
+    \item $X=\{x_1,\ldots,x_n\}$ is a set of variables;
+    \item $D=\{D_1,\ldots,D_n\}$ gives a domain $D_i$ of possible values for
+    each variable $x_i$; and
+    \item $C$ is a set of constraints restricting which combinations of values
+    may be assigned to the variables.
+\end{itemize}
+
+A solution is a complete assignment of values to variables, with
+$x_i\in D_i$ for every $i$, that satisfies every constraint in $C$.
+
+\subsubsection{A CSP model for graph colouring}
+
+For a graph $G=(V,E)$ and a set of $k$ available colours, define:
+\begin{description}
+    \item[Variables:] one variable $c_v$ for every vertex $v\in V$;
+    \item[Domains:] $c_v\in\{1,\ldots,k\}$ for every $v\in V$;
+    \item[Constraints:] $c_u\neq c_v$ for every edge $(u,v)\in E$.
+\end{description}
+
+This model separates the description of the problem from the method used to
+solve it. The same model may be handled by different CP solvers, each with its
+own propagation and search strategies.
+
+\subsubsection{A CSP view of satisfiability}
+
+For a propositional formula $F$:
+\begin{description}
+    \item[Variables:] the propositional variables occurring in $F$;
+    \item[Domains:] $\{\mathit{false},\mathit{true}\}$ for every variable;
+    \item[Constraints:] the clauses, or equivalently the requirement that
+    $F$ evaluates to true.
+\end{description}
+
+\subsubsection{Constraints as relations}
+
+More formally, a constraint may be represented as a pair $(S,R)$. Its
+\emph{scope}
+\[
+    S=(x_{i_1},\ldots,x_{i_r})
+\]
+is the tuple of variables involved, while its relation $R$ contains exactly the
+allowed tuples of values. Therefore,
+\[
+    R\subseteq D_{i_1}\times\cdots\times D_{i_r}.
+\]
+Listing every allowed tuple is often impractical, so constraints are usually
+written more compactly---for example, $c_u\neq c_v$, a linear inequality, or a
+global constraint such as \texttt{all\_different}.
+
+\subsubsection{What kind of solution do we need?}
+
+The required output depends on the problem. We may want:
+\begin{itemize}
+    \item every solution;
+    \item any one feasible solution;
+    \item the number of solutions; or
+    \item an optimal solution according to a stated objective.
+\end{itemize}
+It is important to decide which of these is required before choosing a model
+and a search strategy.
+
+\subsection{Getting started with MiniZinc}
+
+MiniZinc is a high-level modelling language for constraint satisfaction and
+optimisation. A MiniZinc model describes the variables, domains, constraints,
+and objective independently of a particular backend solver. This makes it a
+useful language for experimenting with different modelling choices and solver
+technologies.
+
+We will use the \href{https://docs.minizinc.dev/en/stable/index.html}{MiniZinc Handbook}
+and start working through some exercises.
+
+\subsubsection{Graph colouring with a data file}
+
+The following model describes a graph using arrays of edge endpoints. The
+number of vertices, edges, and available colours can be supplied separately in
+a \texttt{.dzn} data file.
+
+\begin{verbatim}
+int: n;
+set of int: NODE = 1..n;
+
+int: m;
+set of int: EDGE = 1..m;
+array[EDGE] of NODE: from;
+array[EDGE] of NODE: to;
+
+int: k;
+set of int: COLOUR = 1..k;
+array[NODE] of var COLOUR: colour;
+
+constraint forall(e in EDGE)(
+    colour[from[e]] != colour[to[e]]
+);
+
+solve minimize max(colour);
+\end{verbatim}
+
+One possible data file is:
+
+\begin{verbatim}
+n = 5;
+m = 6;
+k = 4;
+from = [1, 1, 2, 3, 3, 4];
+to   = [2, 4, 3, 4, 5, 5];
+\end{verbatim}
+
+\paragraph{Questions for discussion.}
+\begin{itemize}
+    \item How should the model change if $k$ is fixed and we only want to know
+    whether a $k$-colouring exists?
+    \item In the optimisation model, is $k$ an objective value, an upper bound,
+    or both?
+    \item What happens if the declared value of $k$ is too small?
+    \item In what order might the solver assign colours to vertices?
+\end{itemize}
+
+\subsubsection{Exercise: coin change}
+
+Given a set of coin denominations and a target total, choose coin counts whose
+weighted sum equals the target. For example, with denominations
+$\{1,5,10,20\}$ and target $75$, using $75$ one-penny coins is feasible, but
+three $20$-pence coins, one $10$-pence coin, and one $5$-pence coin uses far
+fewer coins.
+
+Start with the following declarations:
+
+\begin{verbatim}
+int: total;
+array[1..5] of int: coins = [1, 5, 10, 20, 50];
+array[1..5] of var 0..100: counts;
+\end{verbatim}
+
+Add a constraint requiring the selected coins to sum to \texttt{total}. Then
+consider an objective that minimises the total number of coins.
+
+\paragraph{Extensions.}
+How would the model change if the supply of each denomination were limited, if
+at least one coin of each type had to be used, or if certain combinations were
+forbidden?
+
+\subsubsection{Exercise: number-placement puzzle}
+
+Place the numbers $0$ to $7$ on the vertices of the supplied puzzle graph so
+that adjacent vertices never contain consecutive numbers. Before writing a
+model, try solving the puzzle by hand and note the reasoning strategies used.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    scale=1.15,
+    every node/.style={circle,draw,fill=white,minimum size=8mm,inner sep=0pt}
+]
+    \coordinate (A) at (-0.65,1.25);
+    \coordinate (B) at (0.65,1.25);
+    \coordinate (C) at (-1.95,0);
+    \coordinate (D) at (-0.65,0);
+    \coordinate (E) at (0.65,0);
+    \coordinate (F) at (1.95,0);
+    \coordinate (G) at (-0.65,-1.25);
+    \coordinate (H) at (0.65,-1.25);
+
+    \draw
+        (A)--(B)
+        (C)--(D)--(E)--(F)
+        (G)--(H)
+        (A)--(C) (A)--(D) (A)--(E)
+        (B)--(D) (B)--(E) (B)--(F)
+        (C)--(G)
+        (D)--(G) (D)--(H)
+        (E)--(G) (E)--(H)
+        (F)--(H);
+
+    \foreach \vertex in {A,B,C,D,E,F,G,H}
+        \node at (\vertex) {\vertex};
+\end{tikzpicture}
+\caption{The Crystal Maze graph.}
+\label{fig:crystal-maze}
+\end{figure}
+
+
+Useful modelling questions include:
+\begin{itemize}
+    \item How can we state that adjacent vertices do not contain consecutive
+    values?
+    \item How can we require every vertex to receive a different value?
+    \item Which vertex appears most constrained, and which value is likely to
+    constrain the remaining choices least?
+\end{itemize}
+
+The second requirement can be expressed with MiniZinc's global
+\texttt{all\_different} constraint. A natural manual strategy is a cycle of
+guessing and propagation: make a tentative assignment, derive its immediate
+consequences, and backtrack when it leads to a contradiction. This leads us toward some of the
+solver techniques we will look at in the next topic.
+
+
+
+\end{document}
