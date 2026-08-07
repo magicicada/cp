@@ -1,1 +1,0 @@
-The calls in marking_script are written as if the minizinc .mzn files are in the same directory as the instances and python marking files, and the calls are made from within that directory.  There were 6 marks for the colouring code, up to 9 each for each of the satisfiable castle instances, and 3 for each of unsatisfiable instances, for a total of 30. 
