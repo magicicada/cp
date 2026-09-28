@@ -1,0 +1,5 @@
+% complete binary tree of height 3 (15 vertices), vertex 1 is the root
+n = 15;
+m = 14;
+from = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7];
+to   = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];

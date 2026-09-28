@@ -1,0 +1,5 @@
+% small example graph from the lab sheet (5 vertices, 6 edges)
+n = 5;
+m = 6;
+from = [1,1,2,3,3,4];
+to = [2,4,3,4,5,5];

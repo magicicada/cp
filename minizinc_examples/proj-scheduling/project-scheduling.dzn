@@ -1,0 +1,16 @@
+n = 7;
+name = ["foundations", "frame", "roof", "plumbing", "wiring", "windows", "plaster"];
+duration = [4, 5, 3, 3, 2, 2, 3];
+
+n_prec = 9;
+prec = [| 1, 2
+        | 2, 3
+        | 2, 4
+        | 2, 5
+        | 2, 6
+        | 4, 7
+        | 5, 7
+        | 3, 7
+        | 6, 7 |];
+
+crane = {1, 2, 3, 6};
