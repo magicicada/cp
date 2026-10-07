@@ -4,11 +4,20 @@ int: m;
 set of int: EDGE = 1..m;
 array[EDGE] of NODE: from;
 array[EDGE] of NODE: to;
-%int: k;
+int: k;
 set of int: COLOUR = 1..n;
+
+
 array[NODE] of var COLOUR: colours;
 
-constraint forall(e in EDGE)(colours[from[e]] != colours[to[e]]);
+%colours[2] <- will be assigned the colour for vertex 2
 
-solve minimize max(colours)
+
+constraint forall(e in EDGE)(colours[from[e]] != colours[to[e]]);
+constraint max(colours) < k;
+
+solve satisfy
+
+
+%solve minimize max(colours)
 

@@ -1,6 +1,13 @@
 % example from https://www.minizinc.org/doc-2.5.5/en/modelling.html 
 
 
+%A banana cake which takes 250g of self-raising flour, 2 mashed bananas, 75g sugar and 100g of butter, and a 
+%chocolate cake which takes 200g of self-raising flour, 75g of cocoa, 150g sugar and 150g of butter. 
+ 
+%And we have 4kg self-raising flour, 6 bananas, 2kg of sugar, 500g of butter and 500g of cocoa.
+
+%We can sell a chocolate cake for $4.50 and a banana cake for $4.00.
+
 % Baking cakes for the school fete
 
 var 0..100: b; % no. of banana cakes
@@ -16,12 +23,13 @@ constraint 75*b + 150*c <= 2000;
 constraint 100*b + 150*c <= 500;
 % cocoa
 constraint 75*c <= 500;
+
 constraint 400*b + 450*c >= 1000;
-constraint b >= 1;
-constraint c <= 1;
+%constraint b >= 2;
+%constraint c >= 3;
 
 % maximize our profit
-% solve maximize 400*b + 450*c;
+%solve maximize 40*b + 450*c;
 solve satisfy;
 
 output ["no. of banana cakes = \(b)\n",

@@ -5,9 +5,10 @@ include "globals.mzn";
 
 int: n = 3;
 set of int: IDX = 1..n;
-int: magic = n * (n*n + 1) div 2;    % the common sum is forced
+%int: magic = n * (n*n + 1) div 2;    % the common sum is forced
 
-array[IDX, IDX] of var 1..n*n: sq;
+array[IDX, IDX] of var int: sq;
+var int: magic;
 
 constraint all_different(sq);
 
