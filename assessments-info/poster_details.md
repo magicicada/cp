@@ -45,7 +45,7 @@ There are many more out there - following citations from these will help you fin
 
 ###  Forbidden papers:
 These are papers that we have seen too many previous posters on.  You are not allowed to do a poster on:
-- https://drops.dagstuhl.de/opus/volltexte/2022/16657/
+- [https://drops.dagstuhl.de/opus/volltexte/2022/16657/](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CP.2021.27)
 - https://link.springer.com/chapter/10.1007/978-3-642-15396-9_37
 
 You should also avoid papers focussing on LLMs in CP - these tend to lack the technical alignment with the course objectives you need to get a good grade. 
