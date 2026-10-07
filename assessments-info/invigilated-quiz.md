@@ -4,7 +4,7 @@
 **Weight:** 20% of overall grade
 **Format:** Invigilated, in-person
 **Date:** Wednesday 28 October 2026
-**Marking:** Marked out of 30 marks
+**Marking:** Marked out of 25 marks
 
 ## Aim
 
