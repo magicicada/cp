@@ -173,8 +173,6 @@ Take $n=5$ and fix $\text{succ}[1]=3$, then $\text{succ}[3]=5$, then $\text{succ
 
 Initially $D(\text{succ}[i]) = \{1,\dots,5\}\setminus\{i\}$ for every $i$.
 
-- $\text{succ}[1]=3$: chain $1\to 3$, length $2$. Pruning rule removes $1$ from $D(\text{succ}[3])$, giving $D(\text{succ}[3])=\{2,4,5\}$.
-- $\text{succ}[3]=5$: chain $1\to3\to5$, length $3$. Pruning rule removes $1$ from $D(\text{succ}[5])$, giving $D(\text{succ}[5])=\{2,3,4\}$.
 - $\text{succ}[5]=2$: chain $1\to3\to5\to2$, length $4$. Pruning rule removes $1$ from $D(\text{succ}[2])$.
 
 ![Chain 1 to 3 to 5 to 2 with node 4 unattached above, and a dashed arc from 2 back to 1 marked pruned below the chain](image-5.png)
@@ -193,7 +191,7 @@ Propagation alone determines the full circuit from three initial decisions, with
 
 ### Completeness
 
-Union-find keeps this filtering cheap: $O(n\,\alpha(n))$ overall. It is not, however, complete. Full generalised arc consistency for `circuit` would require deciding, for every remaining candidate value of every variable, whether it extends to some Hamiltonian circuit consistent with the current domains. Taking domains directly from a graph's adjacency structure reduces this decision problem to deciding Hamiltonicity of that graph, which is NP-complete (Karp, 1972). So no polynomial-time filtering algorithm achieves full consistency for `circuit` unless $P=NP$. The pruning rule above is sound but incomplete, and is used together with all-different's matching-based filter, which is complete for all-different on its own.
+Union-find provides an efficient algorithm: $O(n\,\alpha(n))$. It is not, however, complete. Full generalised arc consistency for `circuit` would require deciding, for every remaining candidate value of every variable, whether it extends to some Hamiltonian circuit consistent with the current domains. Taking domains directly from a graph's adjacency structure reduces this decision problem to deciding Hamiltonicity of that graph, which is NP-complete (Karp, 1972). So no polynomial-time filtering algorithm achieves full consistency for `circuit` unless $P=NP$. The pruning rule above is sound but incomplete, and is used together with all-different's matching-based filter, which is complete for all-different on its own.
 
 ### Circuit in MiniZinc
 
@@ -230,10 +228,9 @@ A few resources:
 This is a generalisation of the all-different constraint: 
 - set of variables $X$ take their values from domain $D$, and constrains the number of times that any value can be assigned to variables within some range.  
 
-Example: remember rota scheduling? we might have some minimum and maximum possible number of people working each night/day shift.  Of course we can do this without a global constraint, but it makes it easier (and faster!) as with all-different. 
+Consider rota scheduling: we might have some minimum and maximum possible number of people working each night/day shift.  Of course we can do this without a global constraint, but it makes it easier (and faster!) as with all-different. 
 
 Pulling a code snippet out for the guards rota example:
-(full examples and problem description at: https://github.com/magicicada/cp/tree/main/week_by_week/week_3/afternoon_examples/guard_rota)
 
 Without global cardinality:
 ```

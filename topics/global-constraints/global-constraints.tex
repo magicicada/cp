@@ -223,7 +223,7 @@ For an index $x$ lying on some chain, write $\text{start}(x)$ for the first inde
 
 \textbf{Pruning rule.} If $x$ lies on a chain with $\text{start}(x)=s$, $\text{end}(x)=e$, and $\text{len}(x) < n$, remove $s$ from $D(\text{succ}[e])$: setting $\text{succ}[e]=s$ would close a cycle of length $\text{len}(x) < n$, a sub-tour. Once $\text{len}(x)=n$, the edge $\text{succ}[e]=s$ closes the unique Hamiltonian circuit and must not be pruned.
 
-Maintaining $\text{start}$, $\text{end}$, and $\text{len}$ under repeated merges is exactly what a \textbf{union-find} (disjoint-set) structure with path compression provides, in amortised time $O(\alpha(n))$ per operation, where $\alpha$ is the inverse Ackermann function.
+Maintaining $\text{start}$, $\text{end}$, and $\text{len}$ we can do with \textbf{union-find} (disjoint-set) structure with path compression in amortised time $O(\alpha(n))$ per operation, where $\alpha$ is the inverse Ackermann function (I don't need you to know what that is, just if you're interested).
 
 This is essentially the \texttt{nocycle} propagator of Caseau and Laburthe (1997); see the resources below.
 
@@ -231,11 +231,11 @@ This is essentially the \texttt{nocycle} propagator of Caseau and Laburthe (1997
 
 Take $n=5$ and fix $\text{succ}[1]=3$, then $\text{succ}[3]=5$, then $\text{succ}[5]=2$, in that order. Two filters act throughout: the pruning rule above, and all-different (an already-claimed successor value cannot be reused elsewhere).
 
-Initially $D(\text{succ}[i]) = \{1,\dots,5\}\setminus\{i\}$ for every $i$.
+Initially $D(\text{succ}[i]) = \{1,\dots,5\}\setminus\{i\}$ for every $i$, then:
 
 \begin{itemize}
-    \item $\text{succ}[1]=3$: chain $1\to 3$, length $2$. Pruning rule removes $1$ from $D(\text{succ}[3])$, giving $D(\text{succ}[3])=\{2,4,5\}$.
-    \item $\text{succ}[3]=5$: chain $1\to3\to5$, length $3$. Pruning rule removes $1$ from $D(\text{succ}[5])$, giving $D(\text{succ}[5])=\{2,3,4\}$.
+%    \item $\text{succ}[1]=3$: chain $1\to 3$, length $2$. Pruning rule removes $1$ from $D(\text{succ}[3])$, giving $D(\text{succ}[3])=\{2,4,5\}$.
+%    \item $\text{succ}[3]=5$: chain $1\to3\to5$, length $3$. Pruning rule removes $1$ from $D(\text{succ}[5])$, giving $D(\text{succ}[5])=\{2,3,4\}$.
     \item $\text{succ}[5]=2$: chain $1\to3\to5\to2$, length $4$. Pruning rule removes $1$ from $D(\text{succ}[2])$.
 \end{itemize}
 
@@ -287,7 +287,7 @@ This extends the chain to $1\to3\to5\to2\to4$, length $5=n$. Now $D(\text{succ}[
     \label{fig:full-circuit}
 \end{figure}
 
-Propagation alone determines the full circuit from three initial decisions, with no search.
+Propagation determines the full circuit from three initial decisions, no search needed. (assuming the initial assignments that we used).  
 
 \subsubsection{Completeness}
 
@@ -334,9 +334,9 @@ This is a generalisation of the all-different constraint:
     \item a set of variables $X$ take their values from domain $D$, and the constraint restricts the number of times that any value can be assigned to variables, within some range.
 \end{itemize}
 
-Example: remember rota scheduling? We might have some minimum and maximum possible number of people working each night/day shift. Of course we can do this without a global constraint, but it makes it easier (and faster!) as with all-different.
+Consider for example rota scheduling (link to an example below). We might have some minimum and maximum possible number of people working each night/day shift. Of course we can do this without a global constraint, but it makes it easier (and faster!) as with all-different.
 
-Pulling a code snippet out for the guards rota example (full examples and problem description at \url{https://github.com/magicicada/cp/tree/main/week_by_week/week_3/afternoon_examples/guard_rota}):
+Pulling a code snippet out for the guards rota example:
 
 Without global cardinality:
 \footnotesize
