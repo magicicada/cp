@@ -95,6 +95,26 @@ Some variables and how we interpret them:
 
 ![an image giving detail of a specific ILP for firefighter](image.png)
 
+The program above uses the classic notation, but as some students find it easier to parse programs that include names rather than $b$ and $d$, below is the same program but with renamed variables:
+
+Min $\sum_{x \in V} \mathrm{burn}_{x,T}$
+
+Subject to:
+
+$$
+\begin{array}{ll}
+\mathrm{burn}_{x,t} \geq \mathrm{burn}_{x,t-1} & x \in V,\ 1 \leq t \leq T \\
+\mathrm{defend}_{x,t} \geq \mathrm{defend}_{x,t-1} & x \in V,\ 1 \leq t \leq T \\
+\mathrm{burn}_{x,t} + \mathrm{defend}_{x,t} \geq \mathrm{burn}_{y,t-1} & x \in V,\ y \in N(x),\ 1 \leq t \leq T \\
+\mathrm{burn}_{x,t} + \mathrm{defend}_{x,t} \leq 1 & x \in V,\ 1 \leq t \leq T \\
+\sum_{y \in N(x)} \mathrm{burn}_{y,t-1} \geq \mathrm{burn}_{x,t} & x \in V,\ 1 \leq t \leq T \\
+\sum_{x \in V} \left(\mathrm{defend}_{x,t} - \mathrm{defend}_{x,t-1}\right) \leq \textit{defense-budget} & 1 \leq t \leq T \\
+\mathrm{defend}_{x,0} = 0 & x \in V \\
+\mathrm{burn}_{x,0} = 1 \text{ if } x = r_i \text{ for some } i,\ 1 \leq i \leq f, \text{ and } 0 \text{ otherwise} & x \in V \\
+\mathrm{burn}_{x,t}, \mathrm{defend}_{x,t} \in \{0, 1\} & 1 \leq t \leq T
+\end{array}
+$$
+
 ### How do we solve ILPs
 In many cases, similar ways to how we solve CPs - branch and bound is popular.  
 
