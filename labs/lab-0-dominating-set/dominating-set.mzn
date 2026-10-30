@@ -10,4 +10,17 @@ array[1..m] of int: to;      % the other end of each edge
 % Decision variable: 1 if vertex i is in the dominating set, 0 otherwise
 array[1..n] of var 0..1: decision;
 
-% Add your constraints and solve item below.
+
+constraint forall (i in 1..n) (
+                                (decision[i] > 0) \/ 
+                                exists(e in 1..m)(
+                                                (decision[from[e]] >0 /\ to[e] = i) \/
+                                                (decision[to[e]] >0 /\ from[e] = i)
+                                                )
+                              ); 
+
+
+% add solution
+solve minimize sum(decision);
+
+
