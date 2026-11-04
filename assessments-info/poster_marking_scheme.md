@@ -1,4 +1,4 @@
-# CP 2024 Poster Marking Scheme
+# CP 2026 Poster Marking Scheme
 
 
 This assessment is band marked, which means you won't get a numerical mark, but instead a band - similar to a dissertation.  When marking, we will consider the following:
